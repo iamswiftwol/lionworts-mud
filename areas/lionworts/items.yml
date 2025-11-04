@@ -1,0 +1,805 @@
+- description: The statue atop the monument is well out of your reach, but you can see that its heavily lidded eyes glitter dully in the dark. They are in fact large green jewels. The mouth of the toad is frozen open in a wide, impassive smile.
+  id: toad
+  keywords:
+    - toad
+    - statue
+    - monument
+  metadata:
+    noPickup: true
+  name: Toad
+  roomDesc: A toad statue sits atop the monument.
+- description: The three tadpoles wrap themselves around the base of the monument, as if swimming single-file in a circle. Their mouths are open wide, as if croaking to their frog mother above. Upon closer inspection, it appears that there is a silver line traced around the inside of each of their mouths.
+  id: tadpoles
+  keywords:
+    - tadpole
+    - tadpoles
+  metadata:
+    noPickup: true
+  name: Tadpoles
+  roomDesc: Three tadpoles on a pond.
+- description: The burped-up <strong>toad key</strong> is a made of heavy black iron and resembles the statue above you, complete with two small green gems for eyes. Along its protracted tongue are dozens of grooves and bits to fit a large metal lock.
+  id: toad_key
+  keywords:
+    - toad
+    - key
+    - iron
+  metadata:
+    noPickup: false
+  name: Toad Key
+  roomDesc: A toad-shaped key made of heavy black iron.
+  behaviors:
+    usable:
+      useMessage: |-
+        With trembling paws, you insert the toad-shaped key into the keyhole in the Lion’s nostril. A low growl emanates from the iron Lion head, and a heavy <i>ka-chunk!</i> sound follows from the gate. As if in response, you hear a cacophony of crows squawking and a night owl screeching far off in the woods ahead. 
+
+        The gate whines as it creeps open, and the stone path continues into the rainy forest.
+      restrictRoom: 6
+      unlockOrigin: lionworts:6
+      unlockDestination: lionworts:7
+- description:
+    - |-
+      You wipe the wet sludge from the surface of the plaque with your paw and discover a poem engraved in the bronze front-plate.
+
+      <i>“Muddy water, toad’s delight
+    - |2-
+       thick with murk and stink. 
+      Clear rain falling from the sky, not dark enough to drink.”</i>
+  id: plaque
+  keywords:
+    - plaque
+    - stone-plaque
+  metadata:
+    noPickup: true
+  name: Plaque
+  roomDesc: A stone plaque.
+- description: |-
+    Half-submerged in the mud at the edge of the water is a heavy pewter pitcher. You are able to see an intricate engraving of singing frogs underneath the caked-on grime. Were it not for the filth that covers the metal, you would think this would be a very valuable keepsake for some frog-loving owner.
+
+    Even more curiously, murky pond water inside the pitcher rises to exactly the level of a thin silver line engraved around the inner rim.
+  id: pitcher
+  keywords:
+    - pitcher
+    - pewter-pitcher
+  metadata:
+    noPickup: false
+  name: Pitcher
+  roomDesc: A half submerged pewter pitcher.
+  behaviors:
+    usable:
+      useMessage: |-
+        You carefully pour the muddy water from the pitcher into the upturned mouths of the tadpoles at the bottom of the toad-elisk. As the last dribble falls into the third tadpole’s mouth, a long low <i>croooooak!</i> begins to rumble down from above.
+
+        You look up to see a strange green glow gleaming from the toad’s jeweled eyes. Her mouth suddenly widens, and a deep froggy voice echoes down from the statue:
+
+        <i>“Fur and scales, mud and smoke,
+        Toads with manes and Cubs that croak!
+        Frogs and lions, friends in rhyme,
+        Across the realm and throughout all time.”</i>
+
+        The stone toad’s strange chant concludes, and with a tremendous <i>burp!</i>, she belches up a toad-shaped key that lands with a wet splat in the mud at your paws.
+      restrictRoom: 4
+      spawnItem: lionworts:toad_key
+      spawnItemDesc: A toad-shaped key falls from the toad statue's mouth.
+      spawnCharges: 1
+- description: This iron Lion appears to be in the middle of an enormous but silent roar, and its two ruby eyes glitter fearsomely in the low light. In one nostril, you see a small keyhole.
+  id: lion_head
+  keywords:
+    - lion-head
+    - black-lion-head
+    - black-head
+    - metal-lion-head
+    - metal-head
+  metadata:
+    noPickup: true
+  name: Lion Head
+  roomDesc: An impressive black metal lion head.
+- description: You wait for the next flash of lightning overhead and watch as the silver etchings shimmer again. They seem to be some kind of magical runes, inlaid with silver in the bark itself. You wonder if it’s a warning for some better-versed Lion than you.
+  id: symbols
+  keywords:
+    - symbols
+    - runes
+    - etchings
+  metadata:
+    noPickup: true
+  name: Symbols
+  roomDesc: Symbols etched in bark.
+- description: It appears that this hollow was at one time a nest of some forest vermin, but has been long-abandoned by whatever animal took refuge in it. Inside, you see a cluster of leaves and some half-eaten acorns.
+  id: hollow
+  keywords:
+    - hollow
+    - cavity
+    - hole
+  metadata:
+    noPickup: true
+  name: Hollow
+  roomDesc: A small hollow under a branch.
+- description: This tarnished gold coin has the bust of a regal-looking billy goat, but no lettering or denomination that you can determine.
+  id: gold_coin
+  keywords: coin,gold
+  metadata:
+    noPickup: false
+  name: Gold Coin
+  roomDesc: A tarnished old coin.
+  behaviors:
+    usable:
+      useMessage: |-
+        You toss a coin into the rushing water beneath the bridge and offer a silent wish to find your way safely to Lionworts. As if in answer to your thoughts, you hear the melodious sound of a wooden wind chime in the forest on the other side of the bridge.
+
+        You also hear what sounds like a displeased grumble from the darkness beneath the stone span.
+      restrictRoom: 18
+      unlockOrigin: lionworts:18
+      unlockDestination: lionworts:58
+- description: The owl carving is beautiful and intricately detailed with feathers. The large talons on the branch look very sharp and very very real. The owl’s enormous round eyes are painted gold, and they shimmer in the rain.
+  id: owl
+  keywords:
+    - owl
+    - beechwood-owl
+  metadata:
+    noPickup: true
+  name: Owl
+  roomDesc: A regal owl carving.
+- description: The blackwood crow is stern, and seems to study you with a sharp judgment. There is one small, black obsidian stone that serves as the statue’s left eye. The right stone is missing.
+  id: crow
+  keywords:
+    - crow
+    - blackwood-crow
+  metadata:
+    noPickup: true
+  name: Crow
+  roomDesc: A lean crow carving.
+- description: You cautiously make your way to the campfire. An unusual herbal broth bubbles in the cauldron depths, and you notice sweet tubers, acorns, rhizomes, and tree bark simmering on the boil. Someone is clearly making the base of a meat stew, but what animal would fit in a cauldron this large?
+  id: cauldron
+  keywords:
+    - cauldron
+    - broth
+    - soup
+  metadata:
+    noPickup: true
+  name: Cauldron
+  roomDesc: A large metal cauldron.
+- description: The tome is weather-worn and apparently well-used. Its leather is cracked and spotted from years of foul weather and cooking grease. You can only make out a portion of the title under all the stains, <i>The Joy of Stewing, 101 Recipes for Irresistible Feline...</i>, but the rest of the writing is illegible.
+  id: tome
+  keywords: tome
+  metadata:
+    noPickup: true
+  name: Tome
+  roomDesc: A leather bound tome.
+- description: The stream runs swift and dark, swollen by the rain. It is almost entirely occluded in mist. As you listen, you think you can almost hear a sad, plaintive whisper through the gurgling of the current.
+  id: water
+  keywords:
+    - water
+    - stream
+  metadata:
+    noPickup: true
+  name: Water
+  roomDesc: A fast moving stream.
+- description: The bridge looks quite ancient and not entirely trustworthy. Wooden planks lay rotting over gaps where the roadway and other stones collapsed into the water below. You wonder just how supportive those wet boards are now.
+  id: bridge
+  keywords:
+    - bridge
+    - stones
+  metadata:
+    noPickup: true
+  name: Bridge
+  roomDesc: A stone and wooden bridge.
+- description: |-
+    The statue has been heavily eroded by weather and time, so that its smooth shape seems to be merely a suggestion of a Lion.
+
+    The words etched into the shield, however, are very clear:
+
+    <i>“Cross the bridge, but pay the toll,
+    Coins for the water, or bones for the troll.”</i>
+  id: shield
+  keywords:
+    - statue
+    - lion
+    - shield
+  metadata:
+    noPickup: true
+  name: Shield
+  roomDesc: An upright shield.
+- description:
+    - You run your paw over the cold, wet ironwork
+    - |2-
+       it looks and feels not unlike the gate you encountered at the entrance of the forest. This section, however, depicts several large wolves giving chase to a small fox.
+
+      Though seemingly in danger, the fox appears to be laughing as he holds three enameled roses, one red, one white, and one black, in his sharp teeth.
+  id: gating
+  keywords:
+    - gating
+    - iron-gating
+  metadata:
+    noPickup: true
+  name: Wrought-Iron Gating
+  roomDesc: Some wrought iron gating.
+- description: |-
+    This enormous bronze tower bell is riven from lip to crown. Whatever force caused the metal such injury must have been tremendous. 
+
+    Across the surface is an embossed image of a sun showering rays down on a forest and castle. Around the inscription band you see a curious poem,
+
+    <i>“My sister sings when few can hear, 
+    I sing when many can.
+    Her song is silent, calm and clear,
+    Mine, brazen, brash and grand.
+
+    I beacon forth the gold of day,
+    She, silver shining night.
+    When trav’lers lose their day-lit way,
+    Three peals guide shadows right.”</i>
+  id: bell
+  keywords:
+    - bell
+    - bronze-bell
+    - cracked-bell
+  metadata:
+    noPickup: true
+  name: Bronze Bell
+  roomDesc: A large bronze bell.
+- description: 'You marvel at the craftsmanship of this beautiful piece of armor and wonder at the size of whatever Lion wore it into battle. It is certainly too large for you, and heavy, but you take a moment to trace a claw along the delicate inlay of a large silver tree in bloom and the many colored jewels that represent its fruit. This breastplate is one fit for an emperor: a gorgeous, priceless, and wildly impractical armament.'
+  id: breastplate
+  keywords:
+    - breastplate
+    - armor
+  metadata:
+    noPickup: true
+  name: Breastplate
+  roomDesc: A breastplate from a suit of armor.
+- description: 'These sacks have been abandoned for a long time, and whatever grain they may have once held has long since been eaten by vermin or turned to rotten mush in this forest’s incessant rain. Upon closer inspection, you think you can make out faded stamps on the bags reading: <i>“Pillet’s Millets,”</i> and <i>“Frote the Stoat’s Oats...”</i>'
+  id: burlap
+  keywords:
+    - burlap
+    - sacks
+  metadata:
+    noPickup: true
+  name: Burlap
+  roomDesc: Piles of frayed burlap sacks.
+- description: |-
+    Several large wooden barrels of questionable structural integrity stand by the door to the mill room, collecting the rain that spills down from the overhang.
+
+    It appears that they’ve collected more than just water, though. In one of the barrels, you find a tarnished <strong>gold coin</strong>.
+  id: barrels
+  keywords:
+    - barrels
+    - wooden-barrels
+  metadata:
+    noPickup: true
+  name: Barrels
+  roomDesc: A few wooden barrels.
+- description: |-
+    This unyoked, four-wheeled cart stands faithful but lonely in the courtyard. It must have once been used to carry in reaped grain for milling, but now it merely collects rain and detritus from the mill rats. At the bottom of the cart box is a shallow pool of rain water in which float rotten pumpkin rinds and dead leaves.
+
+    Your reflection looks back up at you from the rain-rippled surface of the water. Suddenly, a reflection in the water emerges of a dark and hooded figure leaning over the side of the cart across from you. When you look up with a gasp, you are startled to see that you are in fact alone.
+  id: horse_cart
+  keywords:
+    - cart
+    - horse-cart
+  metadata:
+    noPickup: true
+  name: Horse Cart
+  roomDesc: A disused flatbed horse cart.
+- description: |-
+    The massive circular stone at the center of the room once processed raw grain and ground it to flour. Upon closer inspection, you see that it is actually comprised of two large round stones stacked one atop the other: a stationary nether stone on the bottom, and a rotating flying stone on top. Both are scored with innumerable grooves to allow grains to spill in from the hopper above and for flour to spill out the sides into wooden collection troughs below.
+
+    You are looking intently at the intricate lattice of grooves on the wheel when you notice incredibly fine silver tracings around the entirety of the millstone.
+
+    You are not a little unsettled by the rhyme you discover:
+
+    <i>“Circle bound and circle made,
+    What’s sown is reaped, what’s owed is paid.
+    Flour from grain and blood from bone,
+    All will fall beneath the stone.”</i>
+  id: millstone
+  keywords:
+    - millstone
+    - circular-millstone
+  metadata:
+    noPickup: true
+  name: Millstone
+  roomDesc: An enormous, circular millstone.
+- description: |-
+    Most of the paper the rats have used to nest has turned to wet mush in the rain, but in one of the wooden buckets, one torn sheet remains dry and intact. You are disturbed to see it’s a recipe for a most unsettling meal:
+
+    <i>“Autumnal Seasonal Cubling Stew: 
+    20 pounds Lion Cub meat, 
+    5 dollops lard, 
+    1 gallon red wine,
+    Lots of stock! 
+    5 pounds of acorns,
+    10 pounds ground tubers,
+    rhizomes if you got 'em,
+    1 pound pine bark,
+    4 fistfuls of oak leaves,
+    1 bush thyme,
+    20 whole cloves garlic,
+    10 bay leaves (if possible),
+    1 bunch rosemary leaves, diced,
+    5 large onions, roughly chopped,
+    20 carrots - peeled and roughly chopped, 
+    10 celery ribs - roughly chopped,
+    5 cups tomato paste. 
+
+    Generous pinches ground nutmeg, pepper, and to make more savory, four whole salt licks.”</i>
+  id: pages
+  keywords:
+    - pages
+    - book-pages
+    - soggy-pages
+  metadata:
+    noPickup: true
+  name: Pages
+  roomDesc: Torn pages of books.
+- description: |-
+    This broken lantern is caked in melted wax and soot. Jagged glass shards threaten your paws. You gingerly use a claw to open one of the latches, and see inscribed in the base of the wax candle:
+
+    <i>“Let all who walk in darkness see
+    The shadows from this candle flee
+    Let this faithful light burn bright
+    And offer peace in darkest night.”</i>
+
+    You guess this broken lantern isn’t much of a source of comfort or guidance to anyone anymore.
+  id: lantern
+  keywords:
+    - lantern
+    - broken-lantern
+  metadata:
+    noPickup: true
+  name: Lantern
+  roomDesc: A broken lantern.
+- description:
+    - |-
+      This wand is perhaps the most remarkable thing you have ever seen in your young life, Cubling.
+
+      It is about a paw and a half long. It is intricately crafted out of dark walnut wood, with complex and gleaming silver inlay woven around the pommel and grip like ivy. Everywhere you look more closely, you see even more impressive detail work
+    - |2-
+       tiny silver ivy leaves gleam along the shaft, and the wood grain itself swirls in innumerable, interwoven runes. Near the top of the wand, tiny silver thorns clutch a small, rough-hewn but shimmering black agate stone.
+
+      Your heart races... is this an <i>actual</i> magick wand? Was this wand stored here for safe-keeping or did the rats steal it from its proper owner? What shall you do with this masterpiece of sorcery?
+  id: wand
+  keywords:
+    - wand
+    - crooked-wand
+    - wooden-wand
+    - metal-wand
+  metadata:
+    noPickup: false
+  name: Wand
+  roomDesc: A crooked wooden and metal wand.
+  behaviors:
+    usable:
+      enabled: 'TRUE'
+  script: wand
+- description: |-
+    You look closely at the small, black headstone closest to you. It is very old and weathered, topped with a simple granite statue of a blackbird.
+
+    On the surface of the headstone is chiseled the outline of a single wing, and a curious memorial:
+
+    <i>“Here lies the wing of a one-winged rook
+    Who told a scurrilous tale with no more than a look,
+    He wagered for baubles, but lost to a crook,
+    Who took its black feathers and here left it be-plooked.”</i>
+
+    You are pondering this strange rhyme when you notice that the springy turf around the headstone has been recently disturbed.
+  id: black_headstone
+  keywords: black-headstone
+  metadata:
+    noPickup: true
+  name: Black Headstone
+  roomDesc: A black headstone covered in lichen.
+- description: |-
+    You look closely at the grey, lichen-covered headstone. It is very old and has seen better days. It is topped with a simple granite statue of two upraised wings. The epitaph inscribed in the stone reads:
+
+    <i>“Here lies a false crow, who fibbed with each caw
+    He lied while he lived, he’ll lie evermore,
+    His tales all were loathsome and quite inconceiv’ble,
+    So now he’s unmissed and quite unbereavable.”</i>
+
+    You’re getting the sense these crows might only use headstones to make fun of each other.
+  id: grey_headstone
+  keywords: grey-headstone
+  metadata:
+    noPickup: true
+  name: Grey Headstone
+  roomDesc: A grey headstone covered in cracks.
+- description: |-
+    The low slate and block stone wall looks as though it’s been here for centuries, tumbled- down and covered in brambles as it is. Upon closer inspection, you notice a small, pale rock wedged in with the others. 
+
+    When you prize it loose, a small <strong>gold coin</strong> tumbles out.
+  id: wall
+  keywords:
+    - wall
+    - stone-wall
+    - low-wall
+    - broken-wall
+  metadata:
+    noPickup: true
+  name: Wall
+  roomDesc: A low and broken stone wall.
+- description: For a brief moment, moonlight breaks through the rainclouds and illuminates what must have once been a beautiful and ornate stained glass window. What remains shows only the feet and paws of several kinds of animals, and a banner with the words <i>“In the solemnest covenance...”</i>
+  id: window
+  keywords:
+    - window
+    - broken-window
+    - stained-glass-window
+  metadata:
+    noPickup: true
+  name: Window
+  roomDesc: An enormous and broken stained-glass window.
+- description: The gate, though fashioned from living thorny brambles and shrub branches, looks as though it was expertly and thoughtfully woven. It even appears that some of the branches have grown into what looks like vicious shaggy wolf heads, with long black thorns serving wickedly as fangs.
+  id: gate
+  keywords:
+    - gate
+    - thornbush-gate
+  metadata:
+    noPickup: true
+  name: Gate
+  roomDesc: A double gate of woven thorn bushes.
+- description: |-
+    The urn is beautiful and of impressive craftsmanship, but unsettlingly large and ominous. Pale veins run throughout the polished marble surface, and the drizzle gives it a radiant sheen.
+
+    Debossed in gold lettering across the marble crown of the urn are the words <i>“vita fugit, sicut umbra.”</i>
+  id: urn
+  keywords:
+    - urn
+    - black-urn
+    - marble-urn
+    - black-marble-urn
+  metadata:
+    noPickup: true
+  name: Urn
+  roomDesc: A large, black marble urn.
+- description: |-
+    You look down, and the reflection the puddle offers you in return is very strange. You see yourself, standing alone in the thorn maze, just as you are. Instead of rainclouds overhead, however, you see a vast field of gleaming stars. The image is entrancing and very beautiful, and you find yourself lost for a moment in the magnificent celestial display.
+
+    After a moment, however, you begin to notice a strange black shape wheeling through the night sky and blotting out the starlight. You sense that whatever it is, it is searching for you. You also sense that you do not want to be found.
+
+    With a shudder, you look up and are relieved to see only dark storm clouds and falling rain overhead.
+  id: puddle
+  keywords:
+    - puddle
+    - large-puddle
+    - rain-puddle
+  metadata:
+    noPickup: true
+  name: Puddle
+  roomDesc: A large rain puddle
+- description: |-
+    O, Cubling. What strange wonders hath fortune wrought for you this night? 
+
+    You gaze into the depths of the mirror, but it is a moment before your reflection comes into focus in the dark glass. What you see there transfixes you utterly.
+
+    Your reflection stands looking out from the mirror, but it is no longer a Cub. Instead, you see an adult Lion, shrouded in heavy dark robes and holding a staff. It is unmistakably you, but much older. Your face looks heavy with grief, but softens into wonder upon seeing you in your present younger form.
+
+    Younger Cub and older Lion study each other for a moment, amazed.
+
+    Suddenly, your reflection has a realization, and begins to try to tell you something, frantically. No sound emanates from the glass. You shake your head to tell your reflection you cannot hear.
+
+    You watch the Lion’s mouth and their elaborate, desperate gestures. You think you can make out a few words “speak,” “four,” “poem,” and “door.” You’re trying to makes sense of these words when you catch sight of something that fills you with abject horror... a sinister shape is moving unseen toward the back of your reflection, a large slithering thing in the darkness. You point and shout for your reflection to turn around and see the danger but it doesn’t seem to understand you.
+
+    A thought comes to you, a possible way to warn your future self about the slithering danger behind them. Thinking quickly, you shout and spin around, forcing your reflection to do the same in the glass.
+
+    Your heart pounds and your fur bristles. You gasp for breath.
+
+    Were you too late? What happened to the older you?!
+
+    Despite your desperation and confusion, you dare not turn to look back at the glass, lest you accidentally force the older Lion to turn its back on the dangers that await it on their side of the mirror.
+
+    You are left to try to make sense of the four words and why they seemed so important…
+
+    You try to steady your nerves and force yourself to continue.
+  id: mirror
+  keywords:
+    - mirror
+    - black-mirror
+    - glass-mirror
+    - black-glass-mirror
+  metadata:
+    noPickup: true
+  name: Mirror
+  roomDesc: An enormous black glass mirror.
+- description: The strange devotional is a marvelously woven and dyed cloth, depicting a unicorn sitting in a fenced yard, its neck leashed to a pomegranate tree by a gold chain. You marvel at the artistry. This work belongs in a museum instead of an outdoor thorn maze!
+  id: tapestry
+  keywords:
+    - tapestry
+    - cloth-tapestry
+    - hanging-tapestry
+  metadata:
+    noPickup: true
+  name: Tapestry
+  roomDesc: A hanging cloth tapestry
+- description: The thorn wolf is many times your size and ferocious. Two large, dark glass spheres serve for its eyes, and though you can’t be sure, they seem to follow your movements. In the wolf’s bared fangs, you see a <strong>black rose</strong>.
+  id: black_wolf
+  keywords:
+    - black-wolf
+    - thorn-wolf
+  metadata:
+    noPickup: true
+  name: Black Wolf
+  roomDesc: A black thorn bush wolf sculpture.
+- description: Upon closer inspection, you see that the rose’s stem is studded with innumerable tiny diamond shards, and the bud is crafted of black silk. The veins of the gentle petals are delicately filigreed in silver.
+  id: black_rose
+  keywords:
+    - black-rose
+    - rose
+    - roses
+  metadata:
+    noPickup: false
+  name: Black Rose
+  roomDesc: A black rose.
+  behaviors:
+    usable:
+      enabled: 'TRUE'
+  script: rose
+- description: |-
+    The glass is crystal clear and very thin, perched on a round, black wood stand.
+
+    Inside the glass jar is a beautiful if haunting display. Set on a bed of moss and framed by black wooden stems is the skeletal wing of a large bird. The bones are bleached white and look terribly delicate. At the tip of the wing are three large iridescent black crow feathers.
+  id: bell_jar
+  keywords:
+    - jar
+    - bell-jar
+    - glass-jar
+    - glass-bell-jar
+    - ''
+  metadata:
+    noPickup: true
+  name: Bell Jar
+  roomDesc: A beautiful glass cloche bell jar.
+- description: |-
+    The bench is a simple but sturdy stone bench. Upon one arm is carved the homage: <i>“In loving memory of Ervius Fink, who sat here long ago.”</i>
+
+    Upon the other arm is carved: <i>“Waiting for Ms. Ermina Fink he hoped would someday show.”</i>
+  id: bench
+  keywords:
+    - bench
+    - stone-bench
+  metadata:
+    noPickup: true
+  name: Bench
+  roomDesc: A stone bench.
+- description: |-
+    You glance at the open page of the book and realize it’s a guest record. Upon closer inspection, you see a chilling sight: on line after line, on page after page, there is only one name written over and over again: <i>“Ervius Fink.”</i>
+
+    How long was Ervius Fink trapped in this maze, you wonder...
+  id: book
+  keywords:
+    - book
+    - leather-bound-book
+    - open-book
+  metadata:
+    noPickup: true
+  name: Book
+  roomDesc: An open leather-bound book.
+- description: |-
+    A thin silver spike rises in the center of the black clock face. On a clearer night than tonight, the moon would cast the needle’s shadow in a wide arc around the dial to tell the time of night. The various arcs of silver traced along the surface draw a different nightly path for the moon, depending on its brightness and cycle phase. The result is an intricate and perplexing weave of silver swirls waxing and waning in the dark marble.
+
+    Debossed on surface of the dial are also the words: <i>“Dum tempus habemus operemur bonum. Mox nox.”</i>
+  id: moon-dial
+  keywords:
+    - moon-dial
+    - dial
+    - marble-dial
+    - black-dial
+    - black-moon-dial
+    - black-marble-dial
+    - black-marble-moon-dial
+  metadata:
+    noPickup: true
+  name: Moon Dial
+  roomDesc: A large black marble moon dial.
+- description: This white thorn wolf is many times your size and ferocious. Two large, dark glass spheres serve for its eyes, and though you can’t be sure, they seem to follow your movements. In the wolf’s bared fangs, you see a <strong>white rose</strong>.
+  id: white_wolf
+  keywords:
+    - white-wolf
+    - thorn-wolf
+    - ''
+  metadata:
+    noPickup: true
+  name: White Wolf
+  roomDesc: A white bleached holly wolf sculpture.
+- description: The rose’s stem is studded with innumerable tiny sapphire shards, and the bud is crafted of white silk. The veins of the petals are delicately filigreed in gold.
+  id: white_rose
+  keywords:
+    - white-rose
+    - rose
+    - roses
+  metadata:
+    noPickup: false
+  name: White Rose
+  roomDesc: A white rose.
+  behaviors:
+    usable:
+      enabled: 'TRUE'
+  script: rose
+- description: You are on extreme edge as you approach the bundle. You notice several muted silver symbols on the burlap sacking. You reach out a paw to open it and see what is inside when suddenly the sack shifts violently, and emits a terrible smell. So startled are you by the bundle that you let out a yelp and fall back onto the bricks. Your instincts scream at you that whatever is inside <i>must not be let out.</i>
+  id: bundle
+  keywords:
+    - bundle
+    - burlap-bundle
+    - large-burlap-bundle
+  metadata:
+    noPickup: true
+  name: Burlap Bundle
+  roomDesc: A large burlap bundle.
+- description: Your eyes begin to adjust to the effect of the lantern light, and you realize that the thing in the darkness is in fact a topiary sculpture of a redwood wolf. Its bent and sculpted branches look like dark amber in the rain, and are woven through with wicked thorn brambles. You know it is just a bush, but the flickering glass eyes study you with unmistakable malice. In its bared fangs is a <strong>red rose</strong>.
+  id: figure
+  keywords:
+    - figure
+    - dark-figure
+  metadata:
+    noPickup: true
+  name: Dark Figure
+  roomDesc: An enormous dark figure.
+- description: The rose in the maw of the wolf is a freshly cut, fragrant rose. Among the thorny fangs of the sculpture, the vibrant red petals give the illusion of fresh blood on its teeth.
+  id: red_rose
+  keywords:
+    - red-rose
+    - rose
+    - roses
+  metadata:
+    noPickup: false
+  name: Red Rose
+  roomDesc: A red rose.
+  behaviors:
+    usable:
+      enabled: 'TRUE'
+  script: rose
+- description: |-
+    The moss is at least several inches thick, especially in the large basin at the bottom of the fountain and spill out onto the ground around the fountain. Tiny autumnal flower buds of crimson and orange tremble in the cold wind and the moonlight. So thick is the moss that you barely notice the decorative statues that perch at the head of the fountain.
+
+    You carefully brush some of the moss off of the closest statue to discover a small robed cat holding aloft a wand, and several carved words underneath: <i>“...I pledge my wand in service...”</i>
+
+    You make your way around the fountain, carefully removing moss to see find more robed animal statues, including a frog, a fox, a newt and an owl. Each raises a wand in salute, and each is captioned with the same motto.
+
+    Within moments of your discovery, the fountain burbles loudly to life, a cascade of wet moss cascades out of the spigots, and the statues and engravings are completely obscured once more.
+  id: moss
+  keywords:
+    - moss
+    - moss-fountain
+    - fountain
+  metadata:
+    noPickup: true
+  name: Moss
+  roomDesc: Thick, turfy moss.
+- description: In elaborate cursive script that sparkles gold and silver in the moonlight, you read, <i>“Madame Ermina’s Divinations! Spectacular and Oracular! Fortunes Sold, Fortunes Told!”</i>
+  id: sign
+  keywords:
+    - sign
+    - wooden-sign
+    - hanging-sign
+  metadata:
+    noPickup: true
+  name: Sign
+  roomDesc: A brightly painted wooden sign.
+- description: You open the cigar box with no small amount of excitement. On a bed of red velvet, is a black eye patch with a black leather head strap. In the center of the eye patch is a magnificent black <strong>crow's eye</strong>.
+  id: cigar_box
+  keywords:
+    - box
+    - cigar-box
+    - wooden-box
+    - wooden-cigar-box
+  metadata:
+    noPickup: true
+  name: Cigar Box
+  roomDesc: A small wooden cigar box.
+- description: |-
+    The crow’s eye patch is fashioned of simple black leather, but seems to radiate magickal properties. Upon closer inspection, several silver runes are imprinted on the backside of the patch.
+
+    They seem to almost make sense to you.
+  id: crows_eye
+  keywords:
+    - eye
+    - crows-eye
+    - black-eye
+  metadata:
+    noPickup: false
+  name: Crow's Eye
+  roomDesc: A magnificent black crow's eye.
+  behaviors:
+    usable:
+      useMessage: |-
+        You carefully strap the crow’s eye over your own and gaze out through the shimmering black lens. Immediately the world is transformed.
+
+        Colors you never could have imagined before shimmer into focus throughout the darkness. Were you the most gifted poet in Liondon, you would not have words to describe the iridescent blues and silver hues you see traced throughout the pathway and the trees around you.
+
+        Your new sight catches the gleam of the runes scratched onto the trunk of the tree. You think you can finally make sense of the letters:
+        <i>“...to the coven and the good.”</i>
+      restrictRoom: 9
+- description: |-
+    In the rough-hewn stone overhead are scratched jagged silver letters that read:
+
+    <i>“Here you may see
+    what might and should be.”</i>
+  id: entryway
+  keywords:
+    - entryway
+    - stone-entryway
+    - large-entryway
+    - large-stone-entryway
+  metadata:
+    noPickup: true
+  name: Entryway
+  roomDesc: An arched stone entryway to the tower.
+- description: |-
+    Your keen feline eyes catch the sight of embossed lettering on the crossbeam. You lean in closely and squint in the dark to read:
+
+    <i>"Let no fist shake the door 
+    No key unlatch the beam 
+    But the Oath as spoken
+    May light the way agleam."</i>
+  id: crossbeam
+  keywords:
+    - crossbeam
+    - iron-crossbeam
+  metadata:
+    noPickup: true
+  name: Crossbeam
+  roomDesc: An iron crossbeam on an oak door.
+- description: |-
+    The polished orb is spinning slowly and smoothly in the rainwater. On its gleaming mirrored face, you see four symbols inscribed: a bushy foxtail, a broken tree, an arched window, and a fountain.
+
+    On the lip of the marble bowl is a star-shaped indentation.
+  id: silver_orb
+  keywords:
+    - orb
+    - small-orb
+    - silver-orb
+    - small-silver-orb
+  metadata:
+    noPickup: true
+  name: Silver Orb
+  roomDesc: A small silver orb.
+- description: |-
+    For the first time tonight, the clouds have parted enough for you to see a vast field of stars above. Nights are never this clear back at home, and you are amazed by the clarity of the innumerable stars you are seeing for the first time.
+
+    You begin to lose yourself in wonder at the celestial view, when suddenly a strange cloud drifts in front of the stars, blotting out their light. The cloud moves quickly and then doubles back again. You realize with a shudder that what you are seeing is not a cloud, but a large winged <i>thing</i> wheeling on the wind far off over the forest. It vanishes from view once again, but your instincts scream at you to hide from its searching gaze.
+  id: sky
+  keywords: sky
+  metadata:
+    noPickup: true
+  name: Sky
+  roomDesc: The sky.
+- description: This small, black star-shaped iron amulet hangs on a thin chain. Though it is does not have any ornamentation, the metal work is fine and cunningly crafted.
+  id: amulet
+  keywords: amulet
+  metadata:
+    noPickup: false
+  name: amulet
+  roomDesc: A small, star-shaped iron amulet on a chain.
+  behaviors:
+    usable:
+      useMessage: |-
+        You unclasp the badger’s amulet from the chain, and insert it into the star-shaped indentation in the marble bowl. Immediately, the oracular metal hums with intention. Just as Mr. Bartley suggested, you have found its use.
+
+        The starlight above slowly and steadily focuses and brightens on the amulet, as if the charm were collecting the light out of the night sky for its own purpose. Within a few moments, the amulet and the rainwater are dazzlingly bright in concentrated starlight.
+
+        The orb begins to spin faster and faster in the bowl. You watch in amazement as it refracts the concentrated starlight through the water and onto the stone walls around you. Suddenly, the orb ceases its rotation all at once, and projects a mirrored image of one of its inscription on the stones: the outline of a broken window. 
+
+        The orb resumes its blinding spin, and stops suddenly once again, now projecting the image of the fox tail.
+
+        The orb spins a third time, landing on the fountain.
+
+        The orb spins a fourth time, finally settling on the broken tree.
+
+        The reflected image of the tree fades on the wall, the starlight in the bowl dims, and the orb sits heavy and still in the rain water.
+
+        What in Lionworts did you just witness?
+      restrictRoom: 72
+- description:
+    - |-
+      A faint gleam of gold under one of the tree roots in the water catches your eye. You feel compelled to investigate by some unknown force, and creep closer to the stream.
+
+      To your surprise, you find, submerged in a small eddy, a simple but hauntingly beautiful gold ring.
+
+      You can see the delicate Elvish Tengwar script enscribed on the band, writing that glows brighter the more you concentrate on it. Your suspicions are confirmed... this is The One Ring, the Bane of Isildur, forged in secret by the Dark Lord Sauron in the fires of Mount Doom to gain dominion over the free peoples of Middle-Earth and won by Isildur during the War of the Last Alliance
+    - ' Isildur, who cut the Ring from Sauron''s own hand and in so doing destroyed the Dark Lord''s physical form'
+    - ' Isildur, who then refused to destroy the Ring by throwing it into the Fires of Mount Doom'
+    - |2-
+       Isildur, who was betrayed by the Ring itself and slain by Orcs in an ambush on the River Anduin near the Gladden Fields, and so allowed the Ring to remain undetected in the waters of a stream for nigh on two and a half millennia.
+
+      It's probably best you just leave it where it is. You have more important things on your mind.
+  id: roots
+  keywords: roots
+  metadata:
+    noPickup: true
+  name: roots
+  roomDesc: Wet roots

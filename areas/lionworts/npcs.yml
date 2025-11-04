@@ -1,0 +1,14 @@
+- id: rat
+  keywords: ['rat']
+  name: A Rat
+  level: 2
+  description: "The rat's beady red eyes dart frantically, its mouth foaming as it scampers about.<image>rat.png<image>"
+  script: 'rat'
+  behaviors:
+    combat: true
+    ranvier-wander:
+      interval: 20
+      restrictTo: ['lionworts:1', 'lionworts:3', 'lionworts:4']
+  attributes:
+    health: 100
+    energy: 100

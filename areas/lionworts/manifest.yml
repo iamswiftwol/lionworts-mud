@@ -1,0 +1,4 @@
+title: "Lionworts"
+behaviors:
+  progressive-respawn:
+    interval: 60

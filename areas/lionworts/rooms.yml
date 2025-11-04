@@ -1,0 +1,2118 @@
+- id: 1
+  title: THE INVITATION
+  description: |-
+    Fall is roaring its way back into the Great City of Liondon. Wind and rain bluster in out of the north, and dead leaves glob in wet piles on the cobblestones. The majestic spires of the skyline rise against the clouds, but on the streets below, Lions and Cubs just lower their heads against the weather and hurry home for tea. 
+
+    Late one night, you are alone in the den of your foster-family’s home, struggling to focus on your book report for tomorrow’s Antelopes Anatomy class. The fire crackles low in the hearth, and you yawn lazily as you flip through O.P. Blank’s <i>My Time with the Herds of the Greater Savanna, Second Edition.</i>
+
+    Suddenly, you are surprised by a metallic <i>ka-chunk</i> of the mail slot at the front door, the drop of what sounds like a heavy envelope, and the flapping of large wings fading off into the rainy night. Who could it be at this late hour? 
+
+    Shaken alert, you spring down the hall to discover a black paper parcel on the floor, with your name embossed in sparkling silver lettering! You turn the envelope over in your paw to see the return label: 
+
+    <strong>“The Lionworts Academy for Preternaturally Gifted Cubs, Lionworts School of Magick”</strong> 
+
+    Your breath catches in your throat... Lionworts? <i>The</> Lionworts? Immediately you wonder if you’re not at the tail end of some prank by your littermates. Every Cub has heard the many rumors of Lionworts, but no one has ever been able to say if it’s actually real. 
+
+    You quickly return to the hearth to get a better look at the envelope in the firelight. With a nervous paw, you break open the silver wax seal and unfold the black paper letter: 
+
+    <strong>“Congratulations, Young Lion, on your Acceptance to the Lionworts Academy for Preternaturally Gifted Cubs at the Lionworts School of Magick!
+
+    To answer your question, yes! This letter of correspondence is indeed a very real letter of correspondence from Liondon’s most prestigious and only school for the Oracular and Practical Mystical Arts. 
+
+    Please be sure to attend Lionworts Orientation for Novice Cubs at midnight on the night of the Serpent Moon. 
+
+    Your RSVP is not required, but your attendance is mandatory. 
+
+    Signed, 
+
+    Llewellyn Bonisagus
+
+    Wizard of the Nineteenth Order of Sekhmet (ret.),
+    Lionworts Dean of Admissions
+    Seventh Cub of a Seventh Litter 
+
+    P.S. Please do not be late.
+
+    P.P.S. Why are you still reading this?! It’s almost midnight!”</strong>
+
+    With a start, you realize that the night of the Serpent Moon is <i>tonight!</i> But where do you go? 
+
+    The letter in your paws suddenly erupts in cold silver flame, and soot and thin glittering letters sprinkle down to the floor. The fire in the hearth roars silver, and a cool draught washes into the room. Incredibly, you can see that the space behind the fire has opened up into some kind of passageway. 
+
+    You barely have time to scratch a quick note to your foster-family, <strong>“Gone to Lionworts, not sure I’ll be back soon... or ever!”</strong> and toss aside your copy of <i>My Time with the Herds</i> to step into the glowing silver flames that dance in the hearth.
+
+    <image>The_Invitation.png<image>
+  exits:
+    - direction: forward
+      roomId: lionworts:2
+      leaveMessage: You step into the silver flames
+  doors:
+    "0":
+      locked: false
+      closed: false
+      lockedBy: ""
+- id: 2
+  title: SPACE AND TIME
+  description: |-
+    What have you done, young Cub?! You are falling! Head over tail! You are completely disoriented, and seem to be plummeting for longer than would seem possible.
+
+    You can’t tell what is up or down as you tumble through space and time, but you think you catch glimpses of treetops and rooftops, lightning and stars, gleaming lights and wet clouds swirling all around you. Wind roars in your ears, but you also hear the sound of feathered wings flapping, and hooves on cobblestones, and a deep unsettling laughter... until suddenly you land with a hard, wet thud.
+
+    <image>Space_and_Time.png<image>
+  exits:
+    - direction: forward
+      roomId: lionworts:3
+      leaveMessage: You land with a thud
+- id: 3
+  title: THE CLEARING
+  description: |-
+    You are in a muddy clearing in a dark forest, dense pine trees rising all around you. You hear the hushed sound of rain in the trees. A lonely owl hoots deep in the woods, but otherwise, you are completely
+    alone. 
+
+    This forest is unfamiliar to you; even the scent of pine needles and wet earth seem strange here. You must be many miles away from Liondon indeed. In fact, this is quite possibly the farthest away from home you have ever been in your young life. Shaking off the rain from your fur, you take in your surroundings.
+
+    To the north you see a strange stone obelisk.
+
+    To the south is a dark pond.
+
+    Directly in front of you to the east is a stone path leading deeper into the woods.
+  exits:
+    - direction: north
+      roomId: lionworts:4
+      leaveMessage: You approach the stone obelisk
+    - direction: south
+      roomId: lionworts:5
+      leaveMessage: You head to the dark pond
+    - direction: east
+      roomId: lionworts:6
+      leaveMessage: You follow the stone path
+- id: 4
+  title: THE TOAD-ELISK
+  description: |-
+    You approach the tall stone monument with curiosity and wonder. The rough stone is blackened from rain.
+
+    Towering overhead at the top of the column squats a large stone <strong>toad.</strong>
+
+    Wrapped around the base of the column are three stone <strong>tadpoles</strong>.
+
+    You sense a strange energy emanating from the column in front of you, though it stands imposing and silent.
+
+    You may return to the clearing whenever you are ready.
+
+    <image>The_Toadelisk.png<image>
+  exits:
+    - direction: return
+      roomId: lionworts:3
+      leaveMessage: You return to the clearing
+  items:
+    - id: lionworts:toad
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:tadpoles
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 5
+  title: THE POND
+  description: |-
+    Your paws squish in the mud as you make your way closer to the dark pond. A cold wind hisses in the dry cattails somewhere across the water. The air is thick with the wet scent of rotting vegetation.
+
+    Though the place seems terribly lonely, it’s clear that someone has spent some time by the water’s edge: in a muddy space cleared out from the tall reeds, a stone <strong>plaque</strong> rises out of the soggy earth, beside which sits a pewter <strong>pitcher</strong>, half-submerged in the pond muck.
+
+    You may return to the clearing whenever you are ready.
+  exits:
+    - direction: return
+      roomId: lionworts:3
+      leaveMessage: You return to the clearing
+  items:
+    - id: lionworts:plaque
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:pitcher
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 6
+  title: THE GATE OF MANY ANIMALS
+  description: |-
+    The path wends its way through the trees, and the wet stone is cold under your paws. Dead leaves and pine needles cover the ground, and thorny vines hang close from the branches overhead, blocking out the night sky and the rain. After a few minutes along the path, you reach a heavy iron gate that blocks your way.
+
+    The gate looks ancient, as though it hasn’t been opened in years. Thick vines weave their way through the wrought-iron bars, bars cunningly shaped into the shapes of crows, toads, bats, newts, cats and owls. Some have little gold and silver nuggets for eyes, others clasp gems and pearls in their claws. At the center of the gate, beneath two large iron ravens, is an impressive black metal <strong>lion head</strong>.
+
+    You may return to the clearing to the west or proceed east along the path.
+
+    <image>The_Gate_of_Many_Animals.png<image>
+  exits:
+    - direction: west
+      roomId: lionworts:3
+      leaveMessage: You return to the clearing
+    - direction: east
+      roomId: lionworts:7
+      leaveMessage: You proceed along the path
+  doors:
+    lionworts:7:
+      locked: true
+      closed: true
+      lockedBy: ""
+  items:
+    - id: lionworts:lion_head
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 7
+  title: THE PATH
+  description: |-
+    The stone path leads further into the dark forest. You take a deep breath, catching the smells of wet bark and pine. You hear the hooting of an owl deeper in the trees. Was this the same owl that delivered your invitation?
+
+    The way forward is dark, and you can’t quite tell if the chill on your spine is from excitement or dread.
+
+    <a href="https://twitter.com/intent/tweet?text=I%20passed%20the%20first%20challenge%20in%20Lion%20DAO's%20Halloween%20game%2C%20The%20Mysteries%20of%20Lionworts%20%F0%9F%A6%81%F0%9F%8E%83%0A%0AJoin%20the%20game%2C%20solve%20puzzles%2C%20and%20try%20to%20survive%20in%20the%20%40TheLionDAO%20TG%20channel%0A%0A%22Flour%20from%20grain%2C%20blood%20from%20bone%0AAll%20will%20fall%20beneath%20the%20stone.%22">Send an owl messenger forth and tell Liondon and the world of your adventures, young Cub</a>
+
+    To return to the Gate of Many Animals, head west.
+
+    To continue along the path, head east.
+  exits:
+    - direction: east
+      roomId: lionworts:8
+      leaveMessage: You proceed along the path
+    - direction: west
+      roomId: lionworts:6
+      leaveMessage: You go back to the gate
+- id: 8
+  title: THE PATH CONTINUES
+  description: |-
+    A chilly wind blows and shakes rain and dead leaves down from the branches that hang over the path. You shiver and try puffing up your coat to stay warm, but your wet fur clings to your cold, skinny frame instead.
+
+    Your approach along the path startles a conspiracy of ravens out of the treetops above. They flap off, cawing hoarsely in irritation as they fly deeper into the dark woods. As the birds disappear, the forest feels eerily lonely, with no sound around you but the steady rainfall on the trees.
+
+    You may continue to move east or return west along the path.
+  exits:
+    - direction: west
+      roomId: lionworts:7
+      leaveMessage: You go west along the path
+    - direction: east
+      roomId: lionworts:9
+      leaveMessage: You go east along the path
+- id: 9
+  title: THE FALLEN TREE
+  description: |-
+    A very large and very dead oak tree has fallen across the stone path. Through the gap in the forest canopy, you see low rain clouds flash with pale sheet lightning.
+
+    The ancient trunk is now covered in lichen and fungi. In the crook of one of the branches is a small <strong>hollow</strong>. On another branch, you see curious, sharp-angled scratches in the bark. Someone has carved crude <strong>symbols</strong> in the wood in a language you cannot read. When lightning suddenly illuminates the tree in front of you again, the symbols seem to shimmer with silver.
+
+    Somewhat unsettlingly, you hear from deep within the forest ahead the rhythmic sound of clacking wood.
+
+    You take a moment to give the tree trunk a few claw-sharpening scratches of your own to sharpen your claws and calm your rising anxiety.
+
+    You may move east or west along the path.
+  exits:
+    - direction: west
+      roomId: lionworts:8
+      leaveMessage: You go west along the path
+    - direction: east
+      roomId: lionworts:10
+      leaveMessage: You go east along the path
+  items:
+    - id: lionworts:symbols
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:hollow
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:crows_eye
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 10
+  title: THE SIGNPOST
+  description: |-
+    The path leads down into a small, low dell, overhung with enormous branches and carpeted with orange and yellow leaves. It is quiet here but for the patter of rain on the trees.
+
+    Up ahead, you see a strange wooden guidepost where the path splits off in two different directions. The post's arms are two small tree branches, each pointing down a separate path. On top of each branch perches a weather-worn, wooden bird.
+
+    On the left branch is a large and regal <strong>owl</strong> carved of pale beechwood, its wing raised and pointing to the north. On the right branch is a lean <strong>crow</strong> carved of sleek blackwood, its wing raised and pointing due east.
+
+    Despite the fact that they appear to be inanimate wood carvings, you have the unnerving feeling that they are watching you.
+
+    You may take the Path of the Owl north or the Path of the Crow east.
+  exits:
+    - direction: north
+      roomId: lionworts:11
+      leaveMessage: You take the Path of the Owl
+    - direction: east
+      roomId: lionworts:12
+      leaveMessage: You take the Path of Crow
+  items:
+    - id: lionworts:owl
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:crow
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 11
+  title: THE PATH OF THE OWL
+  description: |-
+    The path follows an incline up the side of a low hill. Brambles cover the uneven stones and you must use all four paws to steady yourself, frequently using tree roots as steps on the steep and wet terrain.
+
+    The rain is heavy, you are cold, and you’re starting to wonder if this adventure was really the best way to spend your evening. The excitement of your admission to Lionworts, however, and the possibility of getting in out of the rain, urge you forward.
+
+    To the north, a narrow, muddy trail wends its way up to the hill crest.
+
+    To the east, the stone path continues into the trees and down the other side of the hill.
+  exits:
+    - direction: north
+      roomId: lionworts:13
+      leaveMessage: You follow the muddy trail
+    - direction: east
+      roomId: lionworts:14
+      leaveMessage: You follow the stone path
+- id: 12
+  title: THE PATH OF THE CROW
+  description: |-
+    The Path of the Crow narrows as it leads deeper into the woods. The black branches above you and the brambles that grow about the tree trunks below shut out the sounds of the falling rain. It feels dark and oppressive on this pathway.
+
+    As you venture deeper into the tunnel, the thorny brambles catch your fur and scratch you.
+
+    To the east, the path opens into a clearing. 
+
+    To the west, the path returns to the signpost.
+  exits:
+    - direction: east
+      roomId: lionworts:27
+      leaveMessage: You take the path to the clearing
+    - direction: west
+      roomId: lionworts:10
+      leaveMessage: You return to the signpost
+- id: 13
+  title: THE CAULDRON
+  description: |-
+    You find yourself in a small clearing on the hilltop. You are above the tree line here, but in the rain and the darkness, you can’t see very far into the distance.
+
+    Further into the clearing you see a sturdy three-post wooden lean-to, from which a very large metal <strong>cauldron</strong> hangs suspended by iron chains. Beneath it is a smoldering campfire. Though the clearing is empty, you can tell that someone was here not that long ago. Beside a tree stump you catch sight of a leather-bound <strong>tome</strong>.
+
+    Suddenly you hear the screeching of a night owl. Your nerves are a little on edge, but you think it sounds like a warning. But whom is it trying to alert?
+
+    To the west, you see a faint track leading into the dense underbrush.
+
+    To the north is a rocky overlook.
+
+    To the south is the path back down the hill. 
+  exits:
+    - direction: west
+      roomId: lionworts:15
+      leaveMessage: You follow the track into underbush
+    - direction: north
+      roomId: lionworts:17
+      leaveMessage: You investigate the rocky overlook
+    - direction: south
+      roomId: lionworts:14
+      leaveMessage: You return to the Path of the Owl
+  items:
+    - id: lionworts:cauldron
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:tome
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 14
+  title: THE PATH OF THE OWL, CONTINUED
+  description: |-
+    The stone path continues its way through the forest, and the rain continues to fall in the darkness. Even with your keen feline eyes, you have difficulty seeing the way forward... but you have the unmistakable sensation that you are being watched.
+
+    Thick ground mist now obscures the pathway forward and you are surrounded by tall evergreen trees. You realize that the path here splits into two different directions. There is no signpost to guide you, but you can hear the sound of a stream up ahead, and the tinny clanging of metal deeper in the woods.
+
+    You may head up the hill to the west, east toward the stream, or follow the sound of clanging metal to the south.
+  exits:
+    - direction: west
+      roomId: lionworts:11
+      leaveMessage: You head up the hill
+    - direction: east
+      roomId: lionworts:18
+      leaveMessage: You head toward the stream
+    - direction: south
+      roomId: lionworts:19
+      leaveMessage: You follow the sound of clanging metal
+- id: 15
+  title: THE UNDERBRUSH TRACK
+  description: |-
+    The underbrush is so dense you no longer feel rain dripping on your head, but within moments the air is oppressive and warm. You notice a long rut in the ground in front of you, as if something heavy had been dragged along the track.
+
+    Your nose also catches the musky scent of boar.
+
+    Boar has long been a special, holiday feast meat for Lions; perhaps whomever set up the campfire is hunting boar in these hills? At night? In the rain?
+
+    The underbrush track continues into the brambles, and you think you hear a kind of high-pitched whining and grunting in the darkness up ahead.
+
+    <i>Look, if I can be an honest narrator for you, something seems very wrong about this entire endeavor.</i>
+
+    You may return to the clearing and the cauldron, or proceed through the underbrush.
+  exits:
+    - direction: return
+      roomId: lionworts:13
+      leaveMessage: You return to the clearing
+    - direction: forward
+      roomId: lionworts:16
+      leaveMessage: You proceed through the underbush
+- id: 16
+  title: THE WERE-BOAR HOVEL
+  description: |-
+    You emerge from the underbrush into a dark and shallow den of dry branches and low beds of dead leaves.
+
+    Your eyes adjust quickly to the near-complete darkness and you catch the sight of a sounder of baby boarlets in one corner of the den. The moment they notice your presence they erupt in a cacophony of panicked squealing, bounding around the hovel in terror.
+
+    Your attention, however, is squarely on the enormous creature in front of you. It has the body and mane of a giant Lion, but the head of a mean old boar, with razor sharp tusks curling out like swords from the sides of
+    its snout.
+
+    It bellows a monstrous, menacing roar and rises to its full height, towering over you in the bramble den.
+
+    “I… I…” you stammer, but abject horror clouds your mind completely. You attempt to turn and run, but the creature bounds powerfully toward you with terrifying speed.
+
+    Oh, naive Cubling, I <i>tried</i> to warn you, but you have stumbled into the den of a fearsome were-boar, a cursed creature that walks as a Lion by day, but transforms into a hideous half-boar thing on nights of the full moon.
+
+    Tonight is one of those unlucky nights.
+
+    Your quick wits and reflexes are no match for this infernal beast.
+
+    Incongruously, the last sound you hear in this den of regret is the screeching of a night owl in the woods somewhere beyond the bramble walls.
+
+    <a href="https://twitter.com/intent/tweet?text=I%20was%20mauled%20by%20a%20hideous%20were-boar%20in%20Lion%20DAO's%20Halloween%20game%2C%20The%20Mysteries%20of%20Lionworts%20%F0%9F%A6%81%F0%9F%8E%83%0A%0AJoin%20the%20game%2C%20solve%20puzzles%2C%20and%20try%20to%20survive%20in%20the%20%40TheLionDAO%20TG%20channel%0A%0A%22Flour%20from%20grain%2C%20blood%20from%20bone%0AAll%20will%20fall%20beneath%20the%20stone.%22">Send an owl messenger forth and tell Liondon and the world of your adventures, young Cub</a>
+
+    <image>The_Wereboar_Hovel.png<image>
+  exits:
+    - direction: proceed
+      roomId: lionworts:73
+      leaveMessage: Your journey continues
+- id: 17
+  title: THE OVERLOOK
+  description: |-
+    You clamber up several large rain-soaked rocks to the overlook and peer out into the void beyond the edge. It is difficult to see very far in the rain until a flash of pale purple sheet lightning reveals a vast, forested river valley below.
+
+    You see no sign of any structure that could resemble Lionworts, just endless dark forest and rain.
+
+    The empty landscape fills you with an aching loneliness and you begin to wonder if you will ever return to see your home in Liondon again.
+
+    You are starting to lose yourself in melancholy when a second flash of lightning illuminates the sky and you catch sight of a large winged thing wheeling on the wind far off over the river. The sky is dark again before you can identify the creature, but your instincts scream at you to hide from its searching gaze.
+
+    You decide to get down off the overlook.
+
+    <image>The_Overlook.png<image>
+  exits:
+    - direction: return
+      roomId: lionworts:13
+      leaveMessage: You return to the clearing
+- id: 18
+  title: THE BRIDGE
+  description: |-
+    The stone path leads you down an embankment where the sound of rushing <strong>water</strong> grows louder with every pawstep. At the bottom of the slope is a narrow stone and wooden bridge that spans a fast-moving stream, obscured by fine mist.
+
+    The <strong>bridge</strong> looks very old. Thick vines creep between its stone footings and rotting wooden planks cover large gaps in the span. Below the mist, the stream churns against rocks and through banks of dead reeds. Rain continues to fall in a steady, heavy patter on the trees, on the stone path and on the water.
+
+    At the entrance of the small bridge, on the low parapet wall, stands a small, moss-covered statue of a Lion, its paw resting on an upright <strong>shield</strong>.
+
+    Your whiskers twitch at the sense that something unseen is watching you from the darkness.
+
+    The stone path continues east over the bridge, and disappears into the dripping trees.
+
+    On the north side of the bridge, you see a few broken stone steps leading down to some kind of landing under the bridge.
+
+    A muddy track leads off south along the stream.
+
+    <image>The_Bridge.png<image>
+  exits:
+    - direction: east
+      roomId: lionworts:58
+      leaveMessage: You cross the bridge
+    - direction: north
+      roomId: lionworts:21
+      leaveMessage: "You go under the bridge "
+    - direction: south
+      roomId: lionworts:23
+      leaveMessage: "You follow the track along the stream "
+    - direction: west
+      roomId: lionworts:14
+      leaveMessage: You follow the Path of the Owl west
+  doors:
+    lionworts:58:
+      locked: true
+      closed: true
+      lockedBy: ""
+  items:
+    - id: lionworts:water
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:bridge
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:shield
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 19
+  title: THE FOUNDRY YARD
+  description: |-
+    In a clearing encircled by tall evergreen trees stands a small stone foundry. Tendrils of woodsmoke slink out of the chimney and into the rain and mist. From the open arches of the windows, the low red glow of firelight spills out onto the yard.
+
+    Scattered in the wet grass are pieces of metalwork in various states of repair: some wrought iron <strong>gating</strong>, a large, cracked bronze <strong>bell</strong>, and a <strong>breastplate</strong> from an ancient suit of armor. Large clay cisterns collect the rainwater that splashes from the gutters.
+
+    You see a creature at work in the building, backlit by the red light of a brick furnace.
+
+    A stone path overgrown with thorny shrubs leads into the woods to the west, from which you hear the cawing of a multitude of crows.
+
+    You may enter the foundry, or take the path either west or north into the woods.
+
+    <image>The_Foundry.png<image>
+  exits:
+    - direction: enter
+      roomId: lionworts:20
+      leaveMessage: You enter the foundry
+    - direction: west
+      roomId: lionworts:37
+      leaveMessage: You follow the stone path
+    - direction: north
+      roomId: lionworts:14
+      leaveMessage: You head north to the Path of the Owl
+  items:
+    - id: lionworts:gating
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:bell
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:breastplate
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 20
+  title: THE FOUNDRY FORGE
+  description: |-
+    You cautiously make your way up to the door of the foundry to see a large forest badger in a leather apron wielding a hammer and tongs at an anvil. He doesn’t notice you, so wrapped in his work as he is.
+
+    “Um, excuse me? Mr. Badger?” you begin.
+
+    “<i>Harrum?</i>” it growls in surprise, its furry arm raised mid-swing.
+
+    “I’m, uh, so sorry to disturb you-” you stammer out.
+
+    The badger whips around to face you.
+
+    “Whut’s this, a Cubling, is it?” He is evidently baffled by your presence. He studies you with small black eyes that reflect the light from the furnace. “A bit late at night to be warnderin’ round in these woods, innit? Must be very brave, or very very stupid...”
+
+    “I... uh, received a letter?”
+
+    The badger doesn’t seem to quite understand your presence, but quickly seems to gauge your harmlessness.
+
+    “Well, come in, come in, let’s get you outta this rain,” he grunts. He looks warily out into the woods as you cross the threshold, as if worried about something other than the weather. “Did anyone follow you, Cubling?”
+
+    “Uh... no, no, I don’t know. I don’t think so. Why?”
+
+    “<i>Harrum...</i>” he growls to himself as he guides you to a stool by the fire, casting worried glances out the door. “<i>Harrum</i>... most unusual, most strange...”
+
+    You sit as he closes the door behind you.
+
+    “I’m trying to get to Lionworts,” you start to explain, but the badger erupts in laughter, a surprisingly high-pitched chirrup.
+
+    “Oh... OH! Well of <i>course</i> you are!” He exclaims. “Why else on earth would a Cubling be roamin’ ‘bout in these woods at night?” He growls a <i>harrum</i> to regain his composure.
+
+    “But for the life o’ me,” he continues, “I canna tell why you’re here <i>now</i>?”
+
+    <image>The_Foundry_Forge.png<image>
+  exits:
+    - direction: continue
+      roomId: lionworts:78
+      leaveMessage: The badger continues
+- id: 21
+  title: THE UNDER-BRIDGE STEPS
+  description: |-
+    You make your way down the slick stone steps toward the rushing stream and the underside of the bridge. The mist from the water curls in serpentine tendrils up the stream bank. It clings to the rustling reeds at the water’s edge and the stone pylons of the span. It swirls around your legs and is unusually cold.
+
+    The steps and your paws become completely obscured by the fog and you have a difficult time picking your way forward. The stones are wet from the stream and the rain, and small driftwood branches under paw trip you with every step.
+
+    As you make your cautious way down, your nostrils catch a powerful and rank odor emanating from the landing, or perhaps even from the stream itself.
+
+    If you wish, you can continue to investigate the Landing or turn around.
+  exits:
+    - direction: forward
+      roomId: lionworts:22
+      leaveMessage: You investigate the Landing
+    - direction: return
+      roomId: lionworts:18
+      leaveMessage: You turn around
+- id: 22
+  title: THE LANDING OF THE BRIDGE TROLL
+  description: |-
+    You stumble forward, tripping on the driftwood branches scattered on your path. You emerge from the low wall of fog and onto the stone landing directly below the first arch of the bridge.
+
+    You realize several things all at once.
+
+    You realize there is an enormous stone statue sitting on its haunches directly in front of you, facing the water.
+
+    You realize that the troublesome driftwood branches under paw are actually old animal bones.
+
+    You realize the enormous stone statue is not actually a statue, but a large and frighteningly ugly bridge troll.
+
+    It turns its stoney head to you, and its eyes widen with hunger and menace.
+
+    “I... I... I’m sorry to-” you bleat out, but the troll doesn’t understand you and it doesn’t care to try. With a shocking agility for a creature of its size and weight, the troll throws a bone at you and lunges forward. You lash out with your claws and bare your fangs, and attempt to dive into the stream, but the troll is possessed of supernatural speed and an enormous appetite. It catches you by the scruff of your neck like a rowdy kitten.
+
+    The last sound you hear is the incongruous screech of a night owl in the fog on the other side of the archway.
+
+    <a href="https://twitter.com/intent/tweet?text=I%20was%20dinner%20for%20a%20ravenous%20troll%20in%20Lion%20DAO's%20Halloween%20game%2C%20The%20Mysteries%20of%20Lionworts%20%F0%9F%A6%81%F0%9F%8E%83%0A%0AJoin%20the%20game%2C%20solve%20puzzles%2C%20and%20try%20to%20survive%20in%20the%20%40TheLionDAO%20TG%20channel%0A%0A%22Flour%20from%20grain%2C%20blood%20from%20bone%0AAll%20will%20fall%20beneath%20the%20stone.%22">Send an owl messenger forth and tell Liondon and the world of your adventures, young Cub</a>
+
+    <image>The_Landing_of_the_Bridge_Troll.png<image>
+  exits:
+    - direction: proceed
+      roomId: lionworts:74
+      leaveMessage: Your journey continues
+- id: 23
+  title: THE STREAM-SIDE TRACK
+  description: |-
+    The track follows the bank of the stream as it twists through the dark woods. The rushing water offers a constant gurgling roar beneath the patter of rain in the trees. The air is sharp with smell of pine sap and damp stone. 
+
+    You feel very lonely.
+
+    The track is uneven and treacherous, occasionally washed out in places where the stream has risen to overwhelm the bank. You clamber over slick <strong>roots</strong> and fallen branches as you go.
+
+    To the south is a small water mill.
+
+    To the north you may return to the bridge.
+  exits:
+    - direction: south
+      roomId: lionworts:24
+      leaveMessage: You investigate the mill
+    - direction: north
+      roomId: lionworts:18
+      leaveMessage: You return to the bridge
+  items:
+    - id: lionworts:roots
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 24
+  title: THE MILL OF RATS
+  description: |-
+    Downstream of you is a small waterfall, next to which stands an ancient-looking mill house, its stone facade covered in wet moss. Here, the stream gurgles and spills over the hulking black silhouette of a motionless wooden water wheel. You can hear the water splashing loudly over the oak paddles and onto the rocks below.
+
+    The building looks like it’s been out of service for many years; the roof has largely collapsed, exposing large broken timbers to the elements, and one of the stone walls leans heavily into the structure. The water wheel remains intact, however, massive and solemn in the dark.
+
+    Rain continues to fall and collect in large puddles in the cobblestone yard. Scattered around the yard are piles of frayed <strong>burlap sacks</strong>, a few wooden <strong>barrels</strong>, several broken, rotting, and fragrant pumpkin shells, and a disused flatbed <strong>horse cart</strong>.
+
+    The mill appears to be completely abandoned, but your feline senses quickly tell you it is anything but: you catch the unmistakable scent of rats, and suddenly realize you are being watched by countless pairs of eyes from the building rafters and darkened windows.
+
+    Ugh, you hate rats.
+
+    You may enter the mill to the southeast, explore the water wheel to the east, or return north along the stream-side path from whence you came.
+
+    <image>The_Mill_of_Rats.png<image>
+  exits:
+    - direction: southeast
+      roomId: lionworts:25
+      leaveMessage: You enter the millstone room
+    - direction: east
+      roomId: lionworts:26
+      leaveMessage: You step onto the oak platform
+    - direction: north
+      roomId: lionworts:23
+      leaveMessage: You return to the streamside path
+  items:
+    - id: lionworts:burlap
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:barrels
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:horse_cart
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:gold_coin
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 25
+  title: THE MILLSTONE ROOM
+  description: |-
+    You step cautiously through the open doorway and into the darkness of the cold, damp mill room.
+
+    Immediately your senses are assaulted by the stench of rotten grain and rat dung, as well as the scurrying and squeaking of scores of rats that scatter at your approach. Your skin crawls and your fur stands on end in the presence of so many vermin.
+
+    In front of you is an enormous, circular <strong>millstone</strong> that takes up most of the room. Beside it are wooden grain troughs from which the odor of rot emanates. When you glance above the stone, you see countless tiny but malevolent red eyes studying you from the shadows of the rafters.
+
+    You clear your throat in what you imagine is an assertive half-roar. 
+
+    “I’m not here to cause you any trouble,” you offer.
+
+    Your attempt at begrudging magnanimity, however, is greeted with nothing but snickering squeaks. The rats are mocking you.
+
+    You may go north out the archway to the water wheel, or return northwest to the cobblestone courtyard.
+  exits:
+    - direction: north
+      roomId: lionworts:26
+      leaveMessage: You step onto the oak platform
+    - direction: northwest
+      roomId: lionworts:24
+      leaveMessage: You return to the courtyard
+    - direction: ""
+    - direction: ""
+    - direction: ""
+  items:
+    - id: lionworts:millstone
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 26
+  title: THE WATER WHEEL
+  description: |-
+    Carefully, you step onto the old oak platform. The boards are slick with algae and river water spray. Your nostrils fill with the smell of old wet wood.
+
+    At one time, this enormous wheel caught the falling stream water on its paddles, and rotated an axle in the wall to move the heavy millstone in the other room. Now, the wheel is merely an enormous home for the mill rats. Half of its buckets collect and spill water onto the rocks below, but the other half is stuffed with detritus collected by the rat colony. In fact, you see all kinds of loot the rats have stolen from around the forest: torn <strong>pages</strong> of books, a broken <strong>lantern</strong>, silverware and cutlery, seashells, and all types of nameless debris.
+
+    Most curiously, you catch sight of a crooked wooden and metal <strong>wand</strong> gleaming in a soggy pile of rags.
+
+    You may enter the mill through the archway south or return west to the cobblestone courtyard.
+  exits:
+    - direction: south
+      roomId: lionworts:25
+      leaveMessage: You enter the millstone room
+    - direction: west
+      roomId: lionworts:24
+      leaveMessage: You return to the courtyard
+  items:
+    - id: lionworts:pages
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:lantern
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:wand
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 27
+  title: THE PUMPKIN PATCH
+  description: |-
+    The path emerges from the woods into a small field, where you catch the sound of numerous blackbirds cawing in agitation.
+
+    The rain has let up a little, thankfully. Throughout the field, you see numerous pumpkins-on-the-vine, some small and green, some large and misshapen by their own ripeness and weight. The sweet fragrance of pumpkin mash greets your nose; it appears that the crows have assailed one of the larger gourds, and are flapping around its spilled seeds and pulp.
+
+    The clouds above part briefly, and in the faint moonlight that emerges, you catch a strange sight; at the far end of the field, a tall and unusually thin figure lopes slowly along in uneven movements. In its hand it carries a tall grain scythe. It gleams in the cold moonlight.
+
+    You may run away from the unsettling figure and continue on the Path of the Crow southward or you may approach the figure and possibly ask for directions to Lionworts.
+
+    <i>(Look, if I can be totally honest with you as your narrator, I have a personal rule not to approach mysterious, scythe-wielding figures in the woods at night this close to Halloween, but we all make our own choices in life. And death.)</i>
+  exits:
+    - direction: south
+      roomId: lionworts:29
+      leaveMessage: You run away from the figure
+    - direction: approach
+      roomId: lionworts:28
+      leaveMessage: You trot forward to greet the figure
+- id: 28
+  title: THE SCARECROW FIELD
+  description: |-
+    You trot forward to greet the figure at the wall ready to call out a friendly "Hullo there!"
+
+    As you approach the thing, however, a dreadful chill floods your body and your fur stands on end.
+
+    Caught in a brief moment of moonlight, the figure looks like an antelope standing on its hindquarters, wearing ragged overalls and a broad-brimmed hat through which its antlers curl in wicked spirals. But this creature, you realize, is made entirely of straw. Beneath the brim of its hat, you are stunned to see not a face, but an overripe pumpkin for a head. It carries a gleaming scythe, which it swings at the crows. They flap out of its way and caw loudly, squawk-mocking its attempts to shoo them away from their meal.
+
+    Suddenly, the scarecrow ceases its scuffle with the birds and slowly turns its pumpkin head to you.
+
+    “Uh oh...” squawks one of the crows.
+
+     You’ve been discovered.
+
+    <i>“Who are you and what do you want...?”</i> it intones gravely.
+
+    “Uh...um...I’m-I’m a bit lost, I’m trying to get to-” you stammer.
+
+    <i>“Have you come to steal from me too?”</i>
+
+    The birds caw in excited anticipation.
+
+    “No! Not at all!” you blurt out, as it raises its scythe and strides unsteadily toward you. “I’m a Lion, I don’t even eat pum-”
+
+    <i>“I am the guardian of gourds, the protector of the patch, and I will defend the crop from all thieves, feathered</i> <i>and</i> <i>furred!”</i>
+
+    The blade of the scythe swings wildly through the air, startling several nearby crows into flight.
+
+    You realize quickly that all reason is lost on this single-minded creature.
+
+    Though lacking the grace of a flesh-and-blood gazelle, it nonetheless moves with unnatural speed, and despite your feline reflexes, it bounds upon you. The cruel scythe slices the air just over your ears.
+
+    The last sound you hear is the incongruous screeching of a night owl from somewhere far off beyond the pumpkins.
+
+    <a href="https://twitter.com/intent/tweet?text=%20I%20was%20scythed%20by%20an%20ensorcelled%20scarecrow%20in%20Lion%20DAO's%20Halloween%20game%2C%20The%20Mysteries%20of%20Lionworts%20%F0%9F%A6%81%F0%9F%8E%83%0A%0AJoin%20the%20game%20and%20try%20to%20survive%20in%20the%20%40TheLionDAO%20TG%20channel%0A%0A%22Flour%20from%20grain%2C%20blood%20from%20bone%0AAll%20will%20fall%20beneath%20the%20stone.%22">Send an owl messenger forth and tell Liondon and the world of your adventures, young Cub</a>
+
+    <image>The_Scarecrow_Field.png<image>
+  exits:
+    - direction: proceed
+      roomId: lionworts:75
+      leaveMessage: Your journey continues
+- id: 29
+  title: THE PATH OF THE CROW, EAST WOODS
+  description: |-
+    You crash heedlessly through the thorny underbrush that tangles its way over the path. In the darkness, you narrowly avoid hitting your head several times on some low-hanging tree branches.
+
+    You stop to take in your surroundings. To one side, a small track branches off and leads deeper into the woods south. For a moment you think you see glimmers of faint green light far off in that direction, but when you rub your eyes with your paws, they are gone.
+
+    You may explore the small track heading south or continue to follow the Path of the Crow, either north or west.
+  exits:
+    - direction: south
+      roomId: lionworts:30
+      leaveMessage: You follow the dirt track
+    - direction: north
+      roomId: lionworts:27
+      leaveMessage: You follow the Path of the Crow north
+    - direction: west
+      roomId: lionworts:32
+      leaveMessage: You follow the Path of the Crow west
+- id: 30
+  title: THE BOG
+  description: |-
+    You follow the dirt track deeper into the woods. Soon the way forward is muddy and you are sidestepping large puddles of rainwater. Judging by the scent of rotting vegetation and the waterlogged roots of the trees around you, this track seems to lead down to a forest bog.
+
+    Your progress on the track is getting slower and more tortuous, and your paws and legs are thoroughly caked in thick, smelly mud. You are seriously considering turning back, when suddenly you hear the faint call of a lioness’ voice, far away, and in distress:
+
+    “Hellllp me! Someone hellllp!” she moans plaintively.
+
+    Dread and sympathy rise in you in equal measure.
+
+    You press on along the wet path.
+
+    As if embodying your worry itself, there appears in front of you an apparition of faint, sickly green light, wavering steadily over a pool of murky water. The light reminds you of a low, undisturbed candle flame, or of slowly undulating tresses of long hair in a warm breeze.
+
+    “Hellllp me, Cubling… I’m sinking…” calls the voice on the other side of the pool.
+
+    You feel very scared and very conflicted; if you could just see through the hovering green light, maybe you can figure out how to help the lioness, but something feels very wrong about this place.
+
+    You may turn back to the path from whence you came or press further along toward the dark pool.
+    <image>The_Bog.png<image>
+  exits:
+    - direction: return
+      roomId: lionworts:29
+      leaveMessage: You return to the Path of the Crow
+    - direction: continue
+      roomId: lionworts:31
+      leaveMessage: You press forward toward the dark pool
+- id: 31
+  title: THE DARK POOL OF THE WILL-O’-THE-WISP
+  description: |-
+    The voice goes quiet as you look deeper into the light. You see a mirror image of yourself looking back at you, but grinning strangely. The green flame moves further out over the brackish water, and you feel drawn to it, mesmerized by its swaying movement. 
+
+    Your feline intuition is screaming at you that there is no damsel in distress, and that this will-o’-the-wisp is a malevolent specter attempting to lure you into the swamp.
+
+    You realize it is a venture from which you might not return.
+
+    You try to obey your instincts and flee, but it is too late. Thick, brackish mud clings to your paws, and you are sinking slowly into the bog.
+
+    The more you panic and struggle, the more the mud swallows your body. The green light sputters and offers only the sound of your own laughter echoing coldly at your predicament.
+
+    As the water rises to your chest and neck, the last thing you hear is the incongruous screeching of a night owl over head.
+
+    <a href="https://twitter.com/intent/tweet?text=I%20was%20hypnotized%20by%20a%20deadly%20Will-o'-the-Wisp%20in%20Lion%20DAO's%20Halloween%20game%2C%20The%20Mysteries%20of%20Lionworts%20%F0%9F%A6%81%F0%9F%8E%83%0A%0AJoin%20the%20game%20and%20try%20to%20survive%20in%20the%20%40TheLionDAO%20TG%20channel%0A%0A%22Flour%20from%20grain%2C%20blood%20from%20bone%0AAll%20will%20fall%20beneath%20the%20stone.%22">Send an owl messenger forth and tell Liondon and the world of your adventures, young Cub</a>
+
+    <image>The_Dark_Pool.png<image>
+  exits:
+    - direction: proceed
+      roomId: lionworts:76
+      leaveMessage: And yet your journey continues
+- id: 32
+  title: THE CHAPEL GROUNDS
+  description: |-
+    A chorus of crow-caws greets you as you emerge from the woods and into a grassy clearing. The rain has eased, but a thick fog now blankets the ground. In the middle of the glade stands a dark and dilapidated chapel building, its roof partially caved in. Beside the chapel is a small cemetery.
+
+    All around, you can see the silhouettes of dozens of blackbirds standing sentry on the low, broken stone wall that rings the glade, on the headstones in the graveyard, and in the cross-beams of the collapsed chapel roof. The squawking is incessant.
+
+    You may head down to the chapel or to gate of the cemetery, or, continue along the Path of the Crow either northwest or east into the woods.
+
+    <image>The_Chapel_Grounds.png<image>
+  exits:
+    - direction: chapel
+      roomId: lionworts:33
+      leaveMessage: You head toward the chapel
+    - direction: cemetery
+      roomId: lionworts:34
+      leaveMessage: You head to the gate of the cemetery
+    - direction: east
+      roomId: lionworts:29
+      leaveMessage: You head east into the woods on the Path of the Crow
+    - direction: northwest
+      roomId: lionworts:37
+      leaveMessage: You head northwest into the woods on the Path of the Crow
+- id: 33
+  title: THE ROOKERY CHAPEL
+  description: |-
+    The chapel’s enormous and weathered oak doors hang ajar in their arched stone frame. In the dark of the rafters you hear hundreds of roosting crows, cooing, cawing, and shuffling in their numerous nests. The sound of their voices and wings echoes off the stone floor and columns.
+
+    You prepare to introduce yourself to the birds. You clear your throat to speak, and they fall into a silence. Suddenly, they erupt in a chorus of shocked caws and rustling feathers. In the echoing maelstrom of shrieks and flapping wings, you realize you hadn’t actually planned what to say.
+
+    “Excuse me…” you attempt, but the birds are in a frenzy, “I didn’t mean to disturb your flock!”
+
+    The birds fall into stunned silence.
+
+    “<i>What</i> did you call us?” a deep, hoarse voice croaks down from the eaves of the chapel.
+
+    “I… uh…”
+
+    “WE, are not a <i>‘flock’…</i>” the voice calls down from the darkness, its tone harsh with menace.
+
+    “No, WE are not, no WE are not!” the birds echo throughout the chapel.
+
+    “WE are a <i>MURDER!</i>” the leader squawks down.
+
+    <i>“MURDER! MURDER!”</i> the crows all caw excitedly.
+
+    Oh, Cub, what have you stumbled into?
+
+    “I’m so sorry!” you try one more time. “Of course you are! And a very noble murder at that!”
+
+    <i>“MURDER!”</i> The birds continue to caw.
+
+    “I’m just trying to find my way to Lionworts. Have you heard of it?”
+
+    There is another synchronized silence among the crows before they erupt with tremendous harsh laughter.
+
+    “You’re a very long way from home, Cubling,” the voice intones. “And trespassing in a very sacred rookery.”
+
+    Your fur begins to rise in anxiety.
+
+    “Come up to the eaves and let the Murder decide what the Murder thinks. Do so, or we will feast on Lion meat tonight.”
+
+    You see a collapsed roof beam that leads up to the inky darkness, in which you see an enormous black crow with a single glittering eye.
+
+    You may proceed up to the eaves or make your escape back to the chapel grounds.
+  exits:
+    - direction: up
+      roomId: lionworts:35
+      leaveMessage: You scratch your way up to the eaves
+    - direction: back
+      roomId: lionworts:33
+      leaveMessage: You go back
+- id: 34
+  title: THE CEMETERY
+  description: |-
+    Blackbirds caw at you and flap off as you approach the low and broken stone <strong>wall</strong> that rings the cemetery. You push open the iron gate with a tentative paw, and the ground fog swirls from the disturbance. The squealing hinges are unsettlingly loud, and you wonder to whom you’ve just loudly announced your presence.
+
+    The cemetery is a small one, with not more than a few dozen ancient headstones and monuments scattered like broken teeth throughout the yard. Closest to you is a cracked <strong>black headstone</strong>. Nearby is <strong>grey headstone</strong>, this one covered in lichen.
+
+    Your keen feline eyes watch for movement deeper in the darkness, but you see only the low mist that drifts on the ground and blackbirds hopping farther off in the distance.
+
+    When you are ready, you may return to the chapel grounds.
+  exits:
+    - direction: return
+      roomId: lionworts:32
+      leaveMessage: You return to the chapel grounds
+    - direction: ""
+  items:
+    - id: lionworts:black_headstone
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:grey_headstone
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:wall
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:gold_coin
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 35
+  title: THE EAVES
+  description: |-
+    You scratch your way up the broken roof beam into wooden eaves of the chapel. Your heart is pounding with trepidation. The blackbirds chatter with judgment.
+
+    <i>.“Murder, murder, murder…”</i>
+
+    At the top of the beam is a great nest of thin twigs, woven like wicker, and brimming with feathers and tattered book paper. The numerous black eyes of a brood of hatchlings study your arrival through the gaps in the twigs. On top of the basket nest sits the largest crow you have ever seen. He is almost the size of a raven, with a sleek black coat and an eyepatch over one eye. He studies you intensely before preening the underside of his enormous wing.
+
+    “Do you know who I am?” the crow asks you casually, with a tone that suggests you really should.
+
+    “Only that you are a very important bird, sir,” you attempt flatteringly. He snorts at your ingratiating response. 
+
+    “You are to call me, ‘Your Excellency,’” he replies, his beak still buried in his feathers. “And you wish to go to Lionworts?”
+
+    “Yes, more than anything, Your Excellency.”
+
+    The birds squawk below.
+
+    “And you have your letter of admission as proof?” he asks.
+
+    “Uh… no. It sort of… burned up.”
+
+    The giant crow whips his head to you and studies you again with his one black eye.
+
+    “SUSPICIOUSSSsss…” he hisses.
+
+    <i>“Murder, murder, murder…”</i> the crows throughout the chapel mutter.
+
+    “Honest!” you cry. “I was at home, and an owl delivered it, and when I read it, it burned up in silver flames!”
+
+    At the mention of the owl, the crows shriek in distress.
+
+    <i>“Owl-friend! Owl-friend! Owl-friend!”</i>
+
+    “NO FRIEND OF THE OWL IS A FRIEND OF THE CROW!” His Excellency screeches.
+
+    You want to slap yourself in the head for your succession of faux paws, but you continue nonetheless.
+
+    “It was sent by Llewellyn Bonisagus, the Lionworts Dean of Admissions and Wizard of the Nineteenth Order (ret.)! He is a Seventh Cub of a Seventh Litter! He invited me! I jumped through a fireplace to get here! But now I’m lost! I don’t mean you any harm! I promise!”
+
+    The echoing squawks all around you have reached a fever-pitch. The giant crow ponders for a moment.
+
+    “SILENCE!” he caws to his murder. They settle quickly. 
+
+    “Yesss, yes. I know this wizard. Your story sounds preposterous, but perhaps…” he trails off in thought. “Perhaps the Cubling is exactly what I need…” he coos to himself. Finally, he calls to the rest of the chapel.
+
+    “I have decided!”
+
+    <i>“The Murder has decided!”</i> the crows reply.
+
+    “I will allow you to leave… on one condition! You will find the Magician Llewellyn Bonisagus, and remind him of his promise to return… MY EYE!”
+
+    The birds chatter excitedly, <i>“Allow Cub to leave… allow Cub to leave… find the EYE… find the EYE…”</i>
+
+    “Yes, Your Excellency. I will assist you in any way I can,” you offer hopefully, with one look to the beam from which you came.
+
+    “It is now time for you to leave the eave.” 
+
+    His Excellency turns his attention to the broken stained glass window behind you, through which you can see the wall of the foggy chapel cemetery below. “That way.”
+
+    He watches you sternly with his one black eye.
+
+    “Go on,” he croaks wickedly. “Defenestrate yourself.”
+
+    You must attempt to carefully exit up and out the uppermost window of the eaves. 
+
+    <i>As your narrator, I wish you the best of luck.</i>
+
+    <image>The_Eaves.png<image>
+  exits:
+    - direction: up
+      roomId: lionworts:36
+      leaveMessage: You make your way to the window
+- id: 36
+  title: THE STAINED-GLASS WINDOW
+  description: |-
+    With the chattering of the crows echoing throughout the chapel, you gingerly make your way to the edge of the enormous and broken <strong>stained-glass window</strong>.
+
+    Rain dribbles in through the gaps, and jagged glass and lead cames make for a dangerous exit. You barely avoid cutting your paws on the sharp detritus, gracefully reaching the rain-slick ledge on the exterior of the chapel.
+
+    Taking great care, you may shimmy down the buttress and into the cemetery.
+  exits:
+    - direction: down
+      roomId: lionworts:34
+      leaveMessage: You shimmy down the buttress and into the cemetery
+  items:
+    - id: lionworts:window
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 37
+  title: THE PATH OF THE CROW, WEST WOODS
+  description: |-
+    The mist sinewing out of the ground and the trees has almost completely obscured the path, but you press on slowly, feeling your way forward by the wet stone beneath the pads of your paws.
+
+    Deep in the mist and the dark trees, the sound of clanking metal and scent of woodsmoke drift among the fog in the chill night air.
+
+    Rain is falling openly on your head again, and you are very cold. What you wouldn’t give for a bowl of warm antelope stew right now.
+
+    Here, a narrow trail splits off from the path and leads west into a thorny wall of undergrowth.
+
+    You may head northeast or southeast on Path of the Crow, or you may turn west onto the thorny way.
+  exits:
+    - direction: northeast
+      roomId: lionworts:19
+      leaveMessage: You travel northeast on the Path of the Crow
+    - direction: southeast
+      roomId: lionworts:32
+      leaveMessage: You travel southeast on the Path of the Crow
+    - direction: west
+      roomId: lionworts:38
+      leaveMessage: You turn west onto the thorny way
+- id: 38
+  title: THE THORNY WAY
+  description: |-
+    You enter the tunnel of thorny brambles and make very slow going. It is smaller than is comfortable, and before long, your head and shoulders are nicked and bleeding from numerous scratches.
+
+    You may return to the Path of the Crow by heading east, or you may push further west and deeper into the brambles.
+  exits:
+    - direction: east
+      roomId: lionworts:37
+      leaveMessage: You head back to the Path of the Crow
+    - direction: west
+      roomId: lionworts:39
+      leaveMessage: You head west deeper into the brambles
+- id: 39
+  title: THE THORNBUSH GATE
+  description: |-
+    You emerge from the thorns into a small gap in the brambles. Black wrought-iron posts jut out of the underbrush on either side of you. You surmise that at one time, there may have been a metal fence barring the way forward, but there’s merely a double <strong>gate</strong> of cunningly woven thorn bushes here. They even appear to swing on wooden hinges like doors. Given your recent ongoing experience with thorns, they might be just as imposing a barrier to entry as a spiked metal fence.
+
+    You may push open the gate and head south, or return to the Thorny Way and the Path of the Crow.
+
+    <image>The_Thornbush_Gate.png<image>
+  exits:
+    - direction: south
+      roomId: lionworts:40
+      leaveMessage: You push open the thorny gate and head south
+    - direction: east
+      roomId: lionworts:38
+      leaveMessage: You return to the Thorny Way and the Path of the Crow
+  items:
+    - id: lionworts:gate
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 40
+  title: THE THORNBUSH MAZE
+  description: |-
+    You are on an open-air path and rain drizzles down from the dark sky above. All around you are tall and wildly ill-kempt thorn bush hedges: a topiary maze of thorns. 
+
+    The thorny gate to the north is now soundly locked.
+
+    You may proceed east, west, or south.
+  exits:
+    - direction: west
+      roomId: lionworts:41
+      leaveMessage: You head west into the thorny maze
+    - direction: east
+      roomId: lionworts:42
+      leaveMessage: You head east into the thorny maze
+    - direction: south
+      roomId: lionworts:43
+      leaveMessage: You head south into the thorny maze
+- id: 41
+  title: THE URN
+  description: |-
+    You push your way along the narrow path, nicking your paws and nose on the countless thorns. After a moment, the space widens again, and you see a small alcove in which stands a large, black marble <strong>urn</strong> standing on a white stone plinth.
+
+    You may proceed east or west.
+  exits:
+    - direction: west
+      roomId: lionworts:45
+      leaveMessage: You head west in the thorny maze
+    - direction: east
+      roomId: lionworts:40
+      leaveMessage: You head east in the thorny maze
+  items:
+    - id: lionworts:urn
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 42
+  title: THE PUDDLE
+  description: |-
+    The path continues for a long wet way, until you find yourself walking in a large rain <strong>puddle</strong>. The water is quite cold around your paws, but unavoidable, extending as it does to each of the thorny walls.
+
+    You may proceed west or south.
+  exits:
+    - direction: west
+      roomId: lionworts:40
+      leaveMessage: You head west in the thorny maze
+    - direction: south
+      roomId: lionworts:47
+      leaveMessage: You head south in the thorny maze
+  items:
+    - id: lionworts:puddle
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 43
+  title: THE BOWER OF CHIMES
+  description: |-
+    The thorny walls widen and you find yourself in a small berry garden, though the bushes are dead and the garden fallow this late in the year. Out of the hedge walls grow vine trellises, their branches woven together to form an arched bower overhead.
+
+    Hanging from the dead vines are dozens of wooden chimes that clack and clatter in the cold wind. Their sound rises and falls in uneven rhythms, and you have the fanciful notion that the chimes are warning you of something. What that warning is exacly, however, you cannot tell.
+
+    You may proceed north or west.
+  exits:
+    - direction: north
+      roomId: lionworts:40
+      leaveMessage: You head north in the thorny maze
+    - direction: west
+      roomId: lionworts:44
+      leaveMessage: You head west in the thorny maze
+- id: 44
+  title: THE MIRROR
+  description: |-
+    The path opens into dead end space paved with irregular slate stones. Set in the far wall of thorns is an enormous black glass <strong>mirror</strong>, held by an ornate frame of black wood and peeling gold-leaf.
+
+    You may return to the maze by heading east.
+  exits:
+    - direction: return
+      roomId: lionworts:43
+      leaveMessage: You head east in the thorny maze
+  items:
+    - id: lionworts:mirror
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 45
+  title: THE TAPESTRY
+  description: |-
+    You continue on the topiary path, drizzle hissing on branches all around you. 
+
+    Up ahead, you see a cloth <strong>tapestry</strong> hanging from a wooden frame in the thorn bushes.
+
+    You may proceed south or east.
+  exits:
+    - direction: south
+      roomId: lionworts:46
+      leaveMessage: You head south in the thorny maze
+    - direction: east
+      roomId: lionworts:41
+      leaveMessage: You head east in the thorny maze
+  items:
+    - id: lionworts:tapestry
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 46
+  title: THE BLACK WOLF
+  description: |-
+    You push your way through the brambles on the path only to emerge to a terrifying sight.
+
+    In front of you is the largest <strong>black wolf</strong> you have ever seen, its muscular form poised to strike and its enormous fangs bared in a silent snarl. The beast remains perfectly still and tense at your appearance. It takes you a moment to realize that the wolf is in fact a topiary sculpture, made entirely of cunningly woven black thorn bushes.
+
+    You may leave this alcove by returning north.
+
+    <image>The_Black_Wolf.png<image>
+  exits:
+    - direction: north
+      roomId: lionworts:45
+      leaveMessage: You head north in the thorny maze
+  items:
+    - id: lionworts:black_wolf
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:black_rose
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 47
+  title: O, THE DRUDGERY OF A THORNY, RAINY TOPIARY MAZE
+  description: |-
+    So many thorns. So much rain.
+
+    You trudge along on the wet path and compose a ditty to yourself:
+
+    <i>“It’s all rain and thorns, or it’s all thorns and rain.
+    It never gets better, it’s always the same.
+    If you go forward or back where you came,
+    It’s all rain and thorns or it’s all thorns and rain.”</i>
+
+    You may proceed north or south.
+  exits:
+    - direction: north
+      roomId: lionworts:42
+      leaveMessage: You head north in the thorny maze
+    - direction: south
+      roomId: lionworts:48
+      leaveMessage: You head south in the thorny maze
+- id: 48
+  title: THE RING OF STAVES
+  description: |-
+    You enter a grassy clearing where two paths bisect. Where the paths cross each other stands a circle of seven upright wooden staves, driven into the springy turf at various angles.
+
+    You sense something formal and ritualistic about the presence of the staves at this crossroads, and you find them inexplicably frightening.
+
+    You elect not to walk through the center of the circle, but instead skirt around the staves by staying close to the thorny wall.
+
+    You may proceed north, south, east, or west.
+  exits:
+    - direction: north
+      roomId: lionworts:47
+      leaveMessage: You head north in the thorny maze
+    - direction: south
+      roomId: lionworts:49
+      leaveMessage: You head south in the thorny maze
+    - direction: east
+      roomId: lionworts:56
+      leaveMessage: You head east in the thorny maze
+    - direction: west
+      roomId: lionworts:50
+      leaveMessage: You head west in the thorny maze
+- id: 49
+  title: THE BOTTLED WING
+  description: |-
+    The path dead ends in a hedge cul-de-sac. Set into the wall of dark thorns is a small arched alcove, is a weathered wooden shelf. Recessed in the wall and protected from the rain by the curling branches above it, sits a beautiful glass cloche <strong>bell jar</strong>.
+
+    You may head north back into the maze.
+  exits:
+    - direction: north
+      roomId: lionworts:48
+      leaveMessage: You head north in the thorny maze
+  items:
+    - id: lionworts:bell_jar
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 50
+  title: THE DOGWOOD OF SPRING
+  description: |-
+    In the middle of the path stands a giant flowering dogwood tree, its branches blooming white even in the rainy darkness. The ground beneath is carpeted with beautiful fallen white petals and blossoms.
+
+    You marvel for a moment at how the tree is blooming out of season; this vibrant display would be more appropriate at the spring equinox, not in late October, this close to Halloween.
+
+    Curious. 
+
+    Unsettling, in fact.
+
+    You may proceed east or west.
+  exits:
+    - direction: west
+      roomId: lionworts:51
+      leaveMessage: You head west in the thorny maze
+    - direction: east
+      roomId: lionworts:48
+      leaveMessage: You head east in the thorny maze
+- id: 51
+  title: THE BENCH AND THE BOOK
+  description: |-
+    The pathway leads to a quiet area of repose. A stone <strong>bench</strong> sits under a canvas canopy alongside one wall.
+
+    Sitting on a tall lectern next to the bench is an open leather-bound <strong>book</strong>, pot of ink, and quill.
+
+    You may proceed east, west, or south.
+  exits:
+    - direction: east
+      roomId: lionworts:50
+      leaveMessage: You head east in the thorny maze
+    - direction: west
+      roomId: lionworts:52
+      leaveMessage: You head west in the thorny maze
+    - direction: south
+      roomId: lionworts:54
+      leaveMessage: You head south in the thorny maze
+  items:
+    - id: lionworts:bench
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:book
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 52
+  title: THE MOON DIAL
+  description: |-
+    You step into a wide open space and see a low dais, on which is affixed a large black marble <strong>moon dial</strong>. It shows remarkable craftsmanship, and is covered in swirling silver inlay and various symbols and numbers.
+
+    Interwoven among the thorny walls of the clearing around you bloom countless white moonflowers and night lilies. The air is fragrant with their delicate perfume in the rain.
+
+    You may proceed south or east.
+  exits:
+    - direction: south
+      roomId: lionworts:53
+      leaveMessage: You head south in the thorny maze
+    - direction: east
+      roomId: lionworts:51
+      leaveMessage: You head east in the thorny maze
+  items:
+    - id: lionworts:moon-dial
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 53
+  title: THE WHITE WOLF
+  description: |-
+    You push your way out of a bramble wall and into a ring of broken white marble pillars. In the center of the circle is an enormous <strong>white wolf</strong>, its back arched in an imposing threat, and its teeth bared in a wicked snarl.
+
+    The wolf is a topiary statue, and though merely wrought of bleached holly and interwoven with pale thorny vines, it feels like it could strike out with terrific malice at any moment. The beast remains perfectly still and tense at your approach. A wind stirs in the clearing, and streams of ragged white cloth flutter from the wolf’s frame.
+
+    You may return to the maze by heading north.
+
+    <image>The_White_Wolf.png<image>
+  exits:
+    - direction: north
+      roomId: lionworts:52
+      leaveMessage: You return north to the thorny maze
+  items:
+    - id: lionworts:white_wolf
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:white_rose
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 54
+  title: THE SOUND THE RAIN MAKES
+  description: |-
+    The brambles part and you find you are in a quiet space where the path bends to the east. There are no noticeable landmarks or anything to make this area particularly unusual, but you stop and take it in nonetheless.
+
+    You’re on a rainy path at night in a magical forest.
+
+    Only a few hours ago, you were eating hot stew by the fireplace and trying to write a book report for your Antelopes Anatomy class. Now you’re on an adventure, and a rather sad and frustrating one at that. There’s not much you can do now but take it all in, be appreciative for the experience, and try not to get eaten by wicked creatures or succumb to ancient evil sorceries, you suppose.
+
+    You listen to the sound of the rain on the brambles, a fine melancholy hiss, splatter and drip, and the dull concussive thunder on the horizon. Far, far away, you hear the squawking of blackbirds, and the hoot of a night owl.
+
+    You may proceed east or return north.
+  exits:
+    - direction: north
+      roomId: lionworts:51
+      leaveMessage: You head north in the thorny maze
+    - direction: east
+      roomId: lionworts:55
+      leaveMessage: You head east in the thorny maze
+- id: 55
+  title: THE FOX
+  description: |-
+    A small, well-trimmed topiary sculpture stands in the center of a grassy glen.
+
+    The boxwood figure is of an adolescent fox, standing with one leg jauntily perched on a rock, and his front paws planted on his hips. The pose gives him an air of playful insouciance, both charming and bold. He looks as if he’s in the middle of a friendly wager or boast. He grins widely, showing off his small pointy teeth.
+
+    At the base of the statue is a painted wooden placard that reads:
+
+    <i>“O fair-weather friend, look ‘pon me and see
+    ‘cross wet fields and forests so I decree;
+    That no wolf nor dark thorn e’er troubles me!
+    For I am the Fox of the Roses Three!
+
+    I take what I want, I go where I please!
+    I feast at the castle, I sleep in the leaves!
+    I sing by the fire, I bark at the sea!
+    For I am the Fox of the Roses Three!
+
+    Luck be my birthright, my fortunes be green!
+    Your chase is too slow! Your snares I have seen!
+    I’m a bound’s length ‘head when I choose to leave
+    For I am the Fox of the Roses Three.”</i>
+
+    <image>The_Fox.png<image>
+  exits:
+    - direction: enter
+      roomId: lionworts:39
+      leaveMessage: You enter the thorny tunnel
+    - direction: west
+      roomId: lionworts:54
+      leaveMessage: You return west into the thorny maze
+  doors:
+    lionworts:39:
+      locked: true
+      closed: true
+      lockedBy: ""
+- id: 56
+  title: THE BUNDLED THING
+  description: |-
+    You emerge into a small brick courtyard, surrounded by dense bushes. Puddles of rain collect on the brick under-paw. To the south is a stone archway from which hangs a lantern. The sputtering flame illuminates the space in weak, undulating light.
+
+    In one corner, just out of reach of the light is a large burlap <strong>bundle</strong>, wrapped in heavy rope.
+
+    You may return west, or head through the archway to the south.
+  exits:
+    - direction: west
+      roomId: lionworts:48
+      leaveMessage: You head west in the thorny maze
+    - direction: south
+      roomId: lionworts:57
+      leaveMessage: You head through the archway to the south
+  items:
+    - id: lionworts:bundle
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 57
+  title: THE FIGURE
+  description: |-
+    You move cautiously through the stone arch in the thorn wall and into a darkened, grassy dead-end space. The sputtering flame from the lantern above extends only so far into the area, but what it illuminates fills you with utter dread.
+
+    At the far end of the grass, wreathed in shadow and lurking behind a bronze rain cistern, is an enormous dark <strong>figure</strong>. Its eyes reflect the dim lantern flame in a malevolent red glow. You are being watched with ill intent.
+
+    You may return north through the archway to the brick courtyard.
+
+    <image>The_Figure.png<image>
+  exits:
+    - direction: north
+      roomId: lionworts:56
+      leaveMessage: You head north to the brick courtyard
+  items:
+    - id: lionworts:figure
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:red_rose
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 58
+  title: THE BRIDGE PARAPET
+  description: |-
+    The path over the bridge is ill-worn. Some paving stones have collapsed into the stream below, leaving wide gaps in the span. Over these holes in the path, someone has placed large wooden boards to serve as a walkway. The boards are waterlogged and dark with rot.
+
+    You decide to play it safe and spring onto the low stone parapet wall. With all the grace of your feline instincts, you pick your way along the top of the wall to cross the bridge with ease.
+
+    You may proceed east onto the Eastern Bank Path, or return to the western side of the bridge.
+  exits:
+    - direction: east
+      roomId: lionworts:59
+      leaveMessage: You head onto the Eastern Bank Path
+    - direction: west
+      roomId: lionworts:18
+      leaveMessage: You return west from along the bridge parapet
+- id: 59
+  title: THE EASTERN BANK PATH
+  description: |-
+    The rain has eased, mercifully, but now a very cold wind blows in from the north. You shake the rain out of your fur and rub your shoulders with your paws for warmth. Above, the clouds part somewhat, revealing an enormous pale moon low on the horizon that illuminates the strange terrain before you. In front of you, the path immediately splits into two directions to the north and east.
+
+    To the north, you see a low hill topped by some kind of monument, silhouetted black in the pale moonlight.
+
+    To the east, you see an unusual structure half-hidden behind a circle of swaying pine trees, and catch the scent of wood smoke.
+
+    You may also return west over the bridge.
+  exits:
+    - direction: north
+      roomId: lionworts:60
+      leaveMessage: You head toward the monument on the hill
+    - direction: east
+      roomId: lionworts:61
+      leaveMessage: You head toward the structure in the swaying pines
+    - direction: west
+      roomId: lionworts:58
+      leaveMessage: You return to the bridge
+- id: 60
+  title: THE FOUNTAIN OF MOSS
+  description: |-
+    You climb the low hill to the dark monument and see it is a very large marble fountain. Only a trickle of silver water runs through its spigots or collects in its basin, as the fountain is covered entirely by thick, turfy <strong>moss</strong>. In the main spigot at the top of the fountain grows a cluster of delicate white star-shaped moss flowers.
+
+    North of the fountain, a faint track leads off into a dark forest.
+
+    You may also return east to the East Bank, or, you may follow the track south to the structure you saw in the pine trees.
+    <image>The_Fountain_of_Moss.png<image>
+  exits:
+    - direction: north
+      roomId: lionworts:62
+      leaveMessage: You follow the faint track to the dark forest
+    - direction: south
+      roomId: lionworts:59
+      leaveMessage: You return to the Eastern Bank Path
+    - direction: southeast
+      roomId: lionworts:61
+      leaveMessage: You follow the track to the structure in the pine trees
+  items:
+    - id: lionworts:moss
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 61
+  title: THE FORTUNE TELLER’S CARAVAN
+  description: |-
+    In a small campsite clearing behind a wall of dark pines is a large, gaily painted wooden caravan. Its panels are a vibrant crimson and deep forest green, and glittering gold-leaf adorns the many ornamental flourishes that decorate the exterior. You have never seen a wagon this beautiful or this unusual.
+
+    The caravan’s enormous, gold-gilded wooden wheels rest in a muddy track. Wisps of smoke drift out of a tall stove pipe chimney from the roof and into the misty night air. A brightly painted wooden <strong>sign</strong> hangs over the curved steps leading to the front door. The wagon looks completely at peace in the little pine clearing and it likely hasn’t moved in years. This ostentatious vardo is someone’s home.
+
+    You may knock on the caravan door, head north to the monument on the hill or proceed southward, where the path heads into a steep-sided ravine, thick with pine trees.
+    <image>The_Fortune_Teller's_Caravan.png<image>
+  exits:
+    - direction: enter
+      roomId: lionworts:64
+      leaveMessage: You approach the caravan door
+    - direction: north
+      roomId: lionworts:60
+      leaveMessage: You head north to the monument on the hill
+    - direction: south
+      roomId: lionworts:65
+      leaveMessage: You head south to the ravine of pines
+  items:
+    - id: lionworts:sign
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 62
+  title: THE NIGHTSHADE GARDEN
+  description: |-
+    The track leading north from the fountain is at first easy to follow in the bright moonlight. When it reaches the tall wall of pines, however, it disappears into inky darkness. Here, no light penetrates the trees. You can hear no owls or crows, just the hushed swaying of the pine boughs in the wind.
+
+    Deeper in the woods, the track runs alongside a low, tumbled-down stone wall, seemingly forgotten and half-buried in fallen branches and pine needles. You follow the path into a hollow, where the air feels unnaturally still. Here, hidden by the pressing trees, you find a dreadful little garden. 
+
+    Orderly rows of deadly nightshade stalks lean on wooden frames. They bow heavily from the weight of thick clusters of gleaming black berries.
+
+    A small wooden table covered in pestles and mortars, clay bowls, filthy glass bottles and wax figurines stands to one side of the garden under a canvas tent.
+
+    A bit further along the track is a small enclosed den lit by a low, flickering glow.
+
+    You may return to the fountain or enter the den.
+    <image>The_Nightshade_Garden.png<image>
+  exits:
+    - direction: south
+      roomId: lionworts:60
+      leaveMessage: You return to the fountain on the hill
+    - direction: enter
+      roomId: lionworts:63
+      leaveMessage: You enter the enclosed den
+- id: 63
+  title: THE SPRITE AND THE POISON STILL
+  description: |-
+    You cautiously make your way into the den as a reek of noxious gas assaults your senses. You are dizzy from the fumes, and it takes you a moment to comprehend what is going on in this little hovel.
+
+    In front of you is a large copper still set over a low fire. The metal rattles as some kind of mash boils and bubbles in the pot. At the top of the still, vapor condenses and drips down a long curved swans neck pipe to a cooling pot on the floor.
+
+    Stacked on the floor of the hovel are black-stained buckets of deadly nightshade berries. To your left is a workbench covered in glass bottles, filled with a purple tincture, tightly corked and sealed in black wax. You have all the clues you need to know what is happening; someone is distilling poison here.
+
+    It turns out the that someone is in the den with you right now. A small figure in dark robes stands with its hunched back to you as it work mashing nightshade berries in an upright mash churn. The figure stops when it hears you at the door and slowly turns its hooded head to face you.
+
+    You would never wish this face to appear in even your worst enemy’s nightmares. This wicked sprite has an indescribably hideous face; its long bulbous nose is covered in warts and soot from huffing nightshade powder, and its pale green skin is covered in sores and tufts of hair. Venomous yellow eyes seize upon you with malice at your intrusion, and when the creature hisses a wordless threat at you, it bares a row of broken and rotten black fangs.
+
+    You attempt to flee, but are overwhelmed by the fumes of the deadly nightshade distillery and can merely stumble backwards in horror.
+
+    The last thing you hear in this den of depravity is the incongruous screeching of a night owl.
+
+    <a href="https://twitter.com/intent/tweet?text=I%20was%20cruelly%20poisoned%20by%20a%20venomous%20sprite%20in%20Lion%20DAO's%20Halloween%20game%2C%20The%20Mysteries%20of%20Lionworts%20%F0%9F%A6%81%F0%9F%8E%83%0A%0AJoin%20the%20game%20and%20try%20to%20survive%20on%20%40TheLionDAO's%20TG%20channel%0A%0A%22Flour%20from%20grain%2C%20blood%20from%20bone%0AAll%20will%20fall%20beneath%20the%20stone.%22">Send an owl messenger forth and tell Liondon and the world of your adventures, young Cub</a>
+
+    <image>The_Sprite_and_the_Poison_Still.png<image>
+  exits:
+    - direction: proceed
+      roomId: lionworts:77
+      leaveMessage: Your journey continues
+- id: 64
+  title: THE READING
+  description: |-
+    Your paw shakes with nerves as you knock on the door of the wagon. You hear a startled rustling from within and a tumble and clatter of kitchenwares.
+
+    A flustered white stoat in a silk head scarf opens the circular window in the door and looks at you in confusion.
+
+    “Do you… have appointment?” she asks.
+
+    “Um, no, no, I just… noticed your sign, and um…”
+
+    She winks at you.
+
+    “Ah, yes, yes, you do have appointment, Cublink, you just didn’t realize it yet, yes, yes, yes…”
+
+    She slams the window closed in your face, and unlatches the door to welcome you in.
+
+    The inside of the caravan is even more marvelous and colorful than the outside. Bathed in warm candle light, the interior is a warren of silk and velvet splendor: plush blue pillows brocaded with silver and copper shuttle weave, beaded curtains and tapestries tasseled with gold, lacquered ornamental tables piled high with books and scrolls. The room is fascinatingly cluttered with bronze candelabras, crystals of innumerable colors and shapes and sizes, clay and enameled figurines of mysterious origin, meticulously bejeweled and gold-leafed eggs, painted star charts on papyrus, leather scroll cases, bottles of perfumes and jars of strange spices, divination cards, and tucked into every nook and hanging on every hook, fabulous colored, cut-glass jewelry. A heady haze of incense from a brass censer fills your nose.
+
+    You stare in wonder at the fortune teller’s home and try to stammer out a “thank you…” and an introduction.
+
+    “Let me guess, Cublink…” she looks at you keenly and adjusts her falling headscarf, “you vant to go to Lionvorts…”
+
+    You gasp in surprise.
+
+    “How did you know?!”
+
+    She squints and affects a wise nod.
+
+    “Madame Ermina knows much and tells more…”
+
+    “Oh, are you… um, <i>Madame Ermina?</i>”
+
+    She cocks her head quizzically and blinks in disappointment.
+
+    “Yes, dahlink, try to keep up, yes yes. Yes.”
+
+    Madame Ermina adjusts her head scarf once more and leads you to the table in the center of the small space. You sit down on a soft velvet pillow. It’s the first time you’ve sat down since you leapt through the fireplace of your home back in Liondon, and you allow yourself to relax, if just for a moment.
+
+    Madame Ermina takes your paw in hers and studies your pads and claws.
+
+    “Hmm, curious…” she mutters to herself.
+    <image>The_Reading.png<image>
+  exits:
+    - direction: continue
+      roomId: lionworts:80
+      leaveMessage: The fortune telling continues
+- id: 65
+  title: THE PINE WAY
+  description: |-
+    The path enters a narrow, stoney, steep-sided ravine, and the pine trees on the hills on either side of you are close-set and dark. The full moon breaks through the clouds frequently enough to light a clear way forward. You are startled when a rock clatters down one of the hillsides and frightens a large colony of bats into flight. They flap and dart chaotically through the air over your head, but a moment later, you are alone.
+
+    To the south, the path leads to a round, rocky hillock. To the north, the path leads back to the caravan.
+
+    You may continue in either direction.
+  exits:
+    - direction: south
+      roomId: lionworts:66
+      leaveMessage: You head south to the rocky hillock
+    - direction: north
+      roomId: lionworts:61
+      leaveMessage: You head back north to the caravan
+- id: 66
+  title: THE HILLOCK
+  description: |-
+    This bare, round hill rises out of the end of the ravine and offers you a stunning view of the surrounding area, bathed as it is in pale silver moonlight. You see that you are in a vast and craggy pine forest that stretches north, east, and south for many uninterrupted miles. Across the wide stream to the west, the pines give way to deciduous trees, their bare branches shining in the moonlight from the night’s relentless rain. Far upstream, you see the silhouette of a mill wheel leaning heavily into the water, and even farther north, the arches of the stone bridge.
+
+    Rain still falls sporadically on the woods and hills west beyond the stream.
+
+    A brisk wind rises around you. You hear it rushing through bottom of the ravine and in the boughs of the pines. It is a terribly lonely sound, but it is soon joined in chorus by another.
+
+    On the south end of the hilltop stands a low, partially ruined stone tower. From this spire you hear a plaintive, haunting moan. Though you cannot tell what animal calls, you find it deeply troubling and achingly sad.
+
+    On the eastern heights across the ravine, you see a ring of low walls of a long-ago ruined stone building. Curiously, one perfectly preserved stone archway stands amidst one of these walls. In the archway hangs a wooden door.
+
+    You may investigate the tower to the south, cross the ravine to the eastern heights and investigate the ruins and door, or return back north.
+    <image>The_Hillock.png<image>
+  exits:
+    - direction: south
+      roomId: lionworts:67
+      leaveMessage: You head south to the tower
+    - direction: east
+      roomId: lionworts:68
+      leaveMessage: You head toward the ruins on the eastern heights
+    - direction: north
+      roomId: lionworts:65
+      leaveMessage: You return to the piney ravine
+- id: 67
+  title: THE SINGING TOWER
+  description: |-
+    The tower stands, but only barely. Its once-proud stone blocks lean crookedly atop one another, their edges worn by centuries of rain and wind. Where once they fit flush, wide gaps now yawn, the mortar having eroded away long ago. You realize that the sad moaning must have come from the tower itself. 
+
+    You realize it was just the wind in the crevices.
+
+    There is an arched stone <strong>entryway</strong> to the tower, and inside, a flight of circular stairs rising to the top of the spire.
+
+    It’s when you gaze casually to the south side of the tower, however, that you are chilled through by what you see. Alone in the moonlight, sitting eerily still beneath a thin tree, you catch a glimpse a dark robed figure. When wind picks up and the tower sings once again, the figure is gone.
+
+    You may approach the thin tree south of the tower, enter the archway and clime the old stairs, or return north to the hillock.
+  exits:
+    - direction: south
+      roomId: lionworts:70
+      leaveMessage: You approach the thin tree on the south side of the tower
+    - direction: enter
+      roomId: lionworts:71
+      leaveMessage: You enter the archway and climb the old stairs
+    - direction: north
+      roomId: lionworts:66
+      leaveMessage: You return north to the top of the hillock
+  items:
+    - id: lionworts:entryway
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 68
+  title: THE STONE DOOR
+  description: |-
+    You make your way down the slope of the hillock and scramble back up the steep eastern slope of the ravine, picking your way slowly among the creaking pines and rocky ground. It takes you a long time to reach the ruined walls and the door, and when you do, you are out of breath and inexplicably shaking.
+
+    Whatever building once stood here must have been very large and very grand, as the walls stretch farther in the wooded darkness than you can see. In some places, turf and tree roots have reclaimed what is left of the walls, subsuming the rock in waist-high grassy mounds. In other places, the stones are still visible, but so weathered now as to almost seem a part of the landscape.
+
+    It is for this reason that the incongruous image of the perfectly preserved doorway standing in these ruined walls haunts you.
+
+    It feels intentional.
+
+    Perfectly flush in the stone archway is a weathered oak door, its iron <strong>crossbeam</strong>, studs, and round knocker gleaming in the moonlight.
+
+    You may try the door or return west to the hillock.
+  exits:
+    - direction: door
+      roomId: lionworts:69
+      leaveMessage: You give it your best effort
+    - direction: west
+      roomId: lionworts:66
+      leaveMessage: You return to the Ruins on the Hillock
+  doors:
+    lionworts:69:
+      locked: true
+      closed: true
+      lockedBy: ""
+  items:
+    - id: lionworts:crossbeam
+      respawnChance: 90
+      replaceOnRespawn: true
+  script: last-riddle
+- id: 69
+  title: THE LIONWORTS COURTYARD
+  description: |-
+    Upon speaking the words of the Oath, you hear the door unlock itself and slowly swing open.
+
+    The sight that awaits on the other side astounds you.
+
+    The modest wooden door opens to reveal not a moonlit field of ruins and grass, but a large, stone-paved courtyard ringed by impressive dark gray walls, their weathered blocks cut with long rows of pointed, narrowly arched gothic windows. Each is finely latticed with lead. Some windows flicker from firelight within, while others are dark. Others host a single lit candle.
+
+    The ground under your paws is laid with a checkered pattern of ancient flagstones. Tonight’s rain has pooled in the gaps and indentations in the stones, each puddle reflecting the rising towers like broken mirrors. Before you, a magnificent marble fountain in the shape of a towering white tree spills water into stone pools, into which dozens of smaller orchard trees stretch their roots. Even in the moonlight, you can see their foliage ablaze in autumnal glory.
+
+    Above you, the courtyard walls climb into spires, arches, and buttresses. Grotesques and gargoyles leer down from their perches on the walls and ledges; owls with too many eyes, lions with wings, toads with enormous manes and swords. All of these fantastical and intimidating creatures seem to be watching your every move.
+
+    You walk slowly forward, stupefied by the sight of the cloisters and arcades that ring the enormous courtyard, when suddenly you hear the hoot of an owl in one of the trees closest to the entrance of the main building. You bound across the courtyard, hoping to meet your messenger and guardian owl, but when you get to the enormous oak doors, you find yourself alone once again.
+
+    There is a parchment nailed to the wood, however, and the message written on it frightens you:
+
+    <strong>“<i>HELP!</i>
+
+    Signed,
+    Llewellyn Bonisagus
+    Wizard of the Nineteenth Order of Sekhmet (ret.),
+    Lionworts Dean of Admissions
+    Seventh Cub of a Seventh Litter
+
+    P.S. Congratulations on reaching Lionworts! Very few novices make it past the bridge troll.
+
+    P.P.S. Unfortunately, as you may have surmised, Orientation is delayed for reasons… most peculiar and dangerous.
+
+    P.P.P.S. What do you know about wyverns?
+
+    P.P.P.P.S. Why are you still reading this?! <i>HELP!</i>”</strong>
+
+    With a pounding heart and your stomach in knots, you open the door and enter the darkened school…
+    <image>The_Lionworts_Courtyard.png<image>
+  exits:
+    - direction: proceed
+      roomId: lionworts:82
+      leaveMessage: The End
+- id: 70
+  title: THE THIN TREE
+  description: "You move slowly toward the thin tree at the edge of the hilltop.\n\nIt is dark and leafless, a young aspen separated from its grove, its branches little more than sprigs. At the end of one tremulous branch hangs a red paper lamp, lit by a tiny candle. The lantern rocks in the wind, throwing faint flickering light on the ground below.\n\nWhat most catches your attention, however, is the figure that emerges, seated beneath the feeble paper lamp.\n\nHooded and swathed in dark robes, it leans heavily on a staff of walnut wood. You cannot see the mysterious figure’s face or features..\n\n“Come, Cubling. Be not afraid. Sit with me, while there’s still time.”\n\nWith a cautious step, you move toward the stranger, and sit upright on the wet ground, your tail curled around your paws for warmth and safety. You attempt to peer into the darkness of the stranger’s deep hood, but the light of the candle is too weak to offer you much help.\n\nYou introduce yourself, and can’t stop yourself from asking, “Who are you?”\n\nThe stranger nods once, sagely.\L\L“You are what is, Cubling, I am what will be.”\n\nJust great. More riddles...\n<image>The_Thin_Tree.png<image>"
+  exits:
+    - direction: proceed
+      roomId: lionworts:81
+      leaveMessage: You continue to listen
+- id: 71
+  title: THE TOWER STAIRS
+  description: |-
+    You make your way carefully through the archway and into the ruins of the tower. The wind in the stone chinks echoes eerily inside the ruins, crafting the strangest discordant music you have ever heard.
+
+    You slowly creep up the spiral stairs, taking care to test each step before leaning with your entire weight. The stones are cold under paw.
+
+    Above you is a narrow platform, open to the night sky.
+
+    You may continue up the tower stairs to the roof or return down the stairs and exit the tower.
+  exits:
+    - direction: up
+      roomId: lionworts:72
+      leaveMessage: You continue up the stairs to the roof of the Singing Tower
+    - direction: down
+      roomId: lionworts:67
+      leaveMessage: You head back down the stairs and exit the Singing Tower
+- id: 72
+  title: THE TOWER ROOF
+  description: |-
+    You emerge from the stairs onto a narrow platform, open to the <strong>sky</strong> above. Here, starlight shines down on a white marble plinth. On top of this small column, resting in a marble bowl of fresh rainwater, is a small silver <strong>orb.</strong>
+
+    You may investigate the tower roof or head back down the stairs and exit the tower.
+    <image>The_Tower_Roof.png<image>
+  exits:
+    - direction: down
+      roomId: lionworts:67
+      leaveMessage: You head back down the stairs and exit the Singing Tower
+  items:
+    - id: lionworts:silver_orb
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:sky
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 73
+  title: IN THE BARDO OF THE WERE-BOAR
+  description: |-
+    The screeching of the owl fills your head. Are you alive? Are you dead? 
+
+    No, you are falling! Head over tail! 
+
+    Somehow, shockingly, you are no longer about to be gored in were-boar's hovel (or maybe you already were?), but instead, you are plummeting for longer than would seem possible. You can’t tell what is up or down as you tumble through space and time. Wind roars in your ears, and upon that wind, still, you hear the strange owl screeching.
+
+    Did she somehow save you from the clutches of that terrible monster?
+
+    Is her screeching some kind of magickal incantation?
+
+    Cubling, do you have a guardian owl?
+
+    Questions fill your brain as you fall through nothingness, until suddenly you land with a hard, wet thud in a familiar place...
+  exits:
+    - direction: proceed
+      roomId: lionworts:9
+      leaveMessage: You land with a hard wet thud
+- id: 74
+  title: IN THE BARDO OF THE BRIDGE TROLL
+  description: |-
+    The screeching of the owl fills your head. Are you alive? Are you dead? 
+
+    No, you are falling! Head over tail! 
+
+    Somehow, shockingly, you are no longer about to be eaten by the bridge troll (or maybe you already were?), but instead, you are falling, plummeting for longer than would seem possible. Did it drop you into the river? You can’t tell what is up or down as you tumble through space and time. Wind roars in your ears, and upon that wind, still, you hear the night owl screeching.
+
+    Did she somehow save you from the clutches of that terrible monster?
+
+    Is her screeching some kind of magickal incantation?
+
+    Cubling, do you have a guardian owl?
+
+    Questions fill your brain as you fall through nothingness, until suddenly you land with a hard, wet thud in a familiar place...
+  exits:
+    - direction: proceed
+      roomId: lionworts:9
+      leaveMessage: You land with a hard wet thud
+- id: 75
+  title: IN THE BARDO OF THE SCARECROW
+  description: |-
+    The screeching of the owl fills your head. Are you alive? Are you dead? 
+
+    No, you are falling! Head over tail! 
+
+    Somehow, shockingly, you are no longer about to be cleaved in twain by the scarecrow (or maybe you already were?), but instead, you are plummeting, falling for longer than would seem possible. You can’t tell what is up or down as you tumble through space and time. Wind roars in your ears, and upon that wind, still, you hear the night owl screeching.
+
+    Did she somehow save you from the clutches of that terrible monster?
+
+    Is her screeching some kind of magickal incantation?
+
+    Cubling, do you have a guardian owl?
+
+    Questions fill your brain as you fall through nothingness, until suddenly you land with a hard, wet thud in a familiar place...
+  exits:
+    - direction: proceed
+      roomId: lionworts:9
+      leaveMessage: You land with a hard wet thud
+- id: 76
+  title: IN THE BARDO OF THE WILL-O'-THE-WISP
+  description: |-
+    The screeching of the owl fills your head. Are you alive? Are you dead? 
+
+    No, you are falling! Head over tail! 
+
+    Somehow, shockingly, you no longer seem to be mired in the Will-o'-the-Wisps' dark and deadly pool, but instead, you are falling, plummeting for longer than would seem possible. You can’t tell what is up or down as you tumble through space and time. Wind roars in your ears, and upon that wind, still, you hear the night owl screeching.
+
+    Did she somehow save you from the clutches of that terrible monster?
+
+    Is her screeching some kind of magickal incantation?
+
+    Cubling, do you have a guardian owl?
+
+    Questions fill your brain as you fall through nothingness, until suddenly you land with a hard, wet thud in a familiar place...
+  exits:
+    - direction: proceed
+      roomId: lionworts:9
+      leaveMessage: You land with a hard wet thud
+- id: 77
+  title: IN THE BARDO OF THE POISON SPRITE
+  description: |-
+    The screeching of the owl fills your head. Are you alive? Are you dead? 
+
+    No, you are falling! Head over tail! 
+
+    Somehow, shockingly, you no longer seem to be in the poison sprite's deadly den, but instead, you are falling, plummeting for longer than would seem possible. You can’t tell what is up or down as you tumble through space and time. Wind roars in your ears, and upon that wind, still, you hear the night owl screeching.
+
+    Did she somehow save you from the clutches of that terrible monster?
+
+    Is her screeching some kind of magickal incantation?
+
+    Cubling, do you have a guardian owl?
+
+    Questions fill your brain as you fall through nothingness, until suddenly you land with a hard, wet thud in a familiar place...
+  exits:
+    - direction: proceed
+      roomId: lionworts:9
+      leaveMessage: You land with a hard wet thud
+- id: 78
+  title: A WARM INTRODUCTION
+  description: |-
+    The badger watches you intently as you tell him about your adventures so far: receiving the mysterious letter by owl, the invitation to tonight’s Orientation, and solving the riddle of the Gate of Many Animals.
+
+    “Ohhh,” he grins to himself and nods. “So you liked that one, did ya?” He waddles to the furnace, and lights himself a pipe with one of the glowing embers. “Was my Gate, that. Some of my finest handiwork, if you’ll allow me to boast.”
+
+    To be honest, you’ve never known a badger <i>not</i> to boast when given the opportunity.
+
+    “That was yours? It was a very beautiful,” you flatter before asking what’s really on your mind.
+
+    “Are you...” you hesitate before lowering your voice, “a <i>wizard?</i>”
+
+    The badger erupts once more in his chirruping laugh.
+
+    “AM I A WIZARD?!” He squeals out. “Am I a wizard, the Cubling asks me!”
+
+    He continues to laugh at your question, but then sharply quiets himself, leaning in and lowering his voice.
+
+    “But I knows my fair share of ‘em. Strange lot, they are...”
+
+    He looks out through the window into the darkness beyond the foundry yard, and his concern returns.
+
+    “I forged the metal of that Gate, but it was Lions and Frogs that enchanted it. Me, I’m just of service when they need a bit of metalwork they can’t manage themselves. Even with all their magicks.”
+
+    As if on cue, the furnace fire blazes to life with a rush and a roar. The badger raises his brows.
+
+    “My name’s Bartley, and you can call me ‘Mr. Bartley,’ and I’m one of the finest blacksmiths you’ll find in Liondon and out of it, I wager. My speciality is oracular and occult metals, right fine for wizardry, you see...”
+
+    You’re starting to, you think.
+
+    “But no. No, I’m not a wizard meself. Now listen, and listen well, Cubling. It’s high unusual you’re coming to Lionworts this late in the year. High unusual...”
+
+    He draws on his pipe and thinks for a moment.
+
+    “Maybe they lost some novices, and had you on the waitlist?”
+
+    You attempt to look unruffled by this rather ruffling hypothesis.
+
+    “Whatever it is,” Mr. Bartley continues, “there must be some extra-peculiar goings-on up that castle.”
+
+    Your fur stands on end in excitement at the description of Lionworts as a castle. You’ve been wondering what it might look like, and how you might recognize it, and castles are inherently exciting places.
+
+    “Now most unfort’nately, I can’t be of much service and take you there tonight. I’m bound here by my oath to the work...”
+  exits:
+    - direction: continue
+      roomId: lionworts:79
+      leaveMessage: You continue the conversation
+- id: 79
+  title: THE GIFT
+  description: |-
+    “What is this place, exactly?” you ask.
+
+    “Oh now see, this is a foundry,” he replies, “of the strictly peculiar variety.”
+
+    He leans in with a conspiratorial gleam in his eye. “And I make the finest wands Lionworts has seen in nigh on a century.”
+
+    You start at the thought of seeing a magic wand...
+
+    “But those are reserved for your Fourth Year students, mind you. You won’t be gettin’ one of those any time soon. Assumin’ you survive that long.”
+
+    You are excited and unsettled at the same time...
+
+    “Also, high unusual no one was there to greet you at the path when you made it through the gate. That’s typical the only puzzle you have to solve, that. <i>Harrum, harrum,</i> don’t like that one bit... I can only assume you’re being tested somehow, Cubling. But it’s a dangerous test, I’ll reckon.”
+
+    “Can you tell me how to get to Lionworts, Mr. Bartley?”
+
+    His eyes go wide at your question.
+
+    “No, no, I’m afraid I can’t. But not because I don’t want to, Cubling, but because it doesn’t really matter <i>what</i> I tell you. If the path wants you to find Lionworts, you will. And if the path doesn’t... well, that's another story all together.”
+
+    Mr. Bartley rises from his stool and takes another look out the foundry window at the rain.
+
+    “But I’ll give you some advice. There’s things in these woods that are older than Lionworts. And stranger. And <i>meaner</i>. And you’d be best to avoid them, whatever you do. Use your mind, not your claws, and try to get to school on time.”
+
+    Outside you hear that strange owl hooting again. The rain continues to drip from the slate roof of the foundry.
+
+    “Will-o’-the-Wisps,” Mr. Bartley says. “Lost a lot of Second Year Cubs to Will-o’-the-Wisps a few semesters back. Terrible business. A few returned, but they were a bit... <i>weird,</i> after. You see those green lights out in the woods where there shouldn’t be green lights? You run. No pleases, no thank yous, just run.”
+
+    He shuffles over to a small work bench on the others side of the anvil.
+
+    “Now, I can’t be giving you a wand, Lords no, not allowed <i>that</i>, but this might come in useful to you nonetheless.”
+
+    The kindly badger produces a small, star-shaped iron <strong>amulet</strong> on a chain.
+
+    “What does it do?” you ask.
+
+    “That’s the thing about oracular metals... it hasn’t found its use yet, but it just might in the right paws.”
+
+    “Thank you! That’s very kind of you, Mr. Bartley.”
+
+    “Thank me after you reach Lionworts, Cubling. I reckon you might not feel the same should you find yourself surrounded by were-boars or on a bridge troll’s dinner menu.”
+
+    “Bridge trolls?!?” you exclaim.
+
+    “Not that a bridge troll would understand the concept of a menu, mind you, or even a restaurant, least not one I want to have a reservation for. Just an expression.”
+
+    You are now exceedingly ruffled <i>and</i> unsettled.
+
+    “But I’d best be gettin’ back to work. I don’t have much time tonight. You seem like a decent enough Cubling. I do hope you make it in one piece, I really do...”
+
+    Mr. Bartley turns back to the anvil, puts on his leather gloves, picks up his hammer, and like that, the conversation appears to be over.
+
+    You may now return to the Foundry Yard.
+  exits:
+    - direction: return
+      roomId: lionworts:19
+      leaveMessage: You return to the foundry yard
+  items:
+    - id: lionworts:amulet
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 80
+  title: MADAME ERMINA FINK CONTINUES HER READING
+  description: |-
+    “Why, what is it, Madame Ermina?”
+
+    “SHHHH!” She hisses. “I’m readink…”
+
+    She continues to hold your paw in one of hers and places her other on a crystal globe in front of you on the table. She closes her eyes for a long time, and her head scarf begins to slip down again.
+
+    You aren’t sure if you should also close your eyes, but the crystal globe catches your attention first. To your amazement, you notice a shimmering light emanating from its depths, followed by a swirling cloud of thousands of tiny stars. You are entranced. Suddenly, a small black shape takes form in the crystal, wheeling through the stars. As it moves, it begins to swallow their sparkling lights one by one…
+
+    Madame Ermina gasps, drops your paw and opens her eyes to study you intensely.
+
+    The image in the globe vanishes.
+
+    “Fascinatink…” she whispers to herself.
+
+    “Why, what is it, Madame Ermina?” you ask tremulously.
+
+    She can barely bring herself to speak.
+
+    “Oh, nothink, nothink…” she replies, finally, her eyes nervous. “Erm… vat do you know about wyverns…?”
+
+    You know nothing about wyverns. 
+
+    “Are they… like antelopes?”
+
+    Madame Ermina shakes her head and gives a pitying chuckle at your ignorance.
+
+    “No, my darlink, oh sweet Cublink, no…”
+
+    She sighs.
+
+    “But it is not written that I should tell you about them tonight…”
+
+    You are about to protest, but she hushes you before you can say anything.
+
+    “Shh, shh, shh, yes, yes. I will tell you one small fortune, however, <i>gratis…</i>”
+
+    You’re not sure what that means, but you nod eagerly.
+
+    “You may reach Lionvorts tonight. But…”
+
+    She scuttles down from the table and pulls out a battered wooden <strong>cigar box</strong> from beneath one of the cushions in the back of the room.
+
+    “You will need <i>this</i> before you get there…”
+
+    “You must make great haste, Cublink,” she says. “Is getting late in the night, and you have other urgent appointment.”
+
+    You nod and thank her profusely for her hospitality.
+
+    “And if I may offer you a varning…” she whispers darkly, “Vatch the skies…”
+
+    You may leave the caravan whenever you are ready.
+  exits:
+    - direction: exit
+      roomId: lionworts:61
+      leaveMessage: You exit the caravan
+  items:
+    - id: lionworts:cigar_box
+      respawnChance: 90
+      replaceOnRespawn: true
+    - id: lionworts:crows_eye
+      respawnChance: 90
+      replaceOnRespawn: true
+- id: 81
+  title: THE LESSON
+  description: |-
+    “You have seen much in your short time in this forest, and in this world,” the stranger says.
+
+    You almost start blurting out some of tonight’s adventures, but you realize this person must know about them already. You simply nod.
+
+    “You have seen much tonight, but now you must learn.”
+
+    The wind picks up some, moaning through the ravine and the tower behind you.
+
+    “What am I to learn?”
+
+    The flame sputters in the wind.
+
+    “The lesson… of <i>time.</i>”
+
+    You concentrate, trying to understand.
+
+    “Time shapes us whether we wish it to or not. And the better magicks, the truer magicks, know this fact. They understand the rhythms of life. They respect that inexorable flow. Like a leaf upon a stream, we must travel upon the current of time.”
+
+    You are transfixed by this stranger, even if you’re not sure what it’s talking about.
+
+    “This is why spells are born in the movements of stars. This is why they are written into moon dials. Why they honor growing things. They are spoken and cast through music and in poems. To study magick, one must study the rhythm of the world, and the rhythm of the words that shape the world. All things magickal are crafted in time and through time.”
+
+    You remember all of the magick poems and riddles tonight, not realizing how many were actually spells…
+
+    “Be not afraid of the passage of time, Cubling. For one day you will understand it well. When you learn the deeper rules, you will also learn its secrets. But know this: what time takes from us was never really ours. What it gives to us is only for a day.”
+
+    “I don’t think I understand yet,” you admit.
+
+    “You will.”
+
+    The wind shakes the paper lamp overhead.
+
+    “Will I see you again?”
+
+    The stranger chuckles quietly to themself at your question.
+
+    “Yes. Most assuredly. I have remembered this moment, for we are here now, and you will remember this moment, for we will be here again. Mind this in the meantime: be faithful to your Oath. Be true to your covenants. Like this quivering lone aspen above us, stronger in its grove, you must find strength and faith in your fellowships to come.”
+
+    You wonder idly to yourself about planting more aspens on this hill to protect the tree.
+
+    The stranger nods its head.
+
+    “That would be a gesture of kindness greater than you might know.”
+
+    You gasp as you realize the stranger seems to have known your thoughts.
+
+    “How did you…”
+
+    “I didn’t read your thoughts, Cubling. I remembered them.”
+
+    A sudden gust of cold wind rushes out of the ravine, and moans in the tower. Ragged clouds hurry by overhead, and the lamp in the branch is blown out. The stranger looks to the sky for a brief moment, and in the moonlight you see their face for the first time.
+
+    You are startled, but somehow not scared, to see the smooth, bleached white skull and bared fangs of a Lion skeleton.
+
+    In the very next moment, the Lion is gone.
+
+    You are alone with the thin tree and your thoughts, the moonlight shining coldly upon you. 
+
+    You may now return to the Singing Tower.
+  exits:
+    - direction: return
+      roomId: lionworts:67
+      leaveMessage: You return to the Singing Tower
+- id: 82
+  title: THE END... OR IS IT?
+  description: |-
+    Congratulations, Cubling!
+
+    You have successfully found your dangerous way to the Lionworts Academy for Preternaturally Gifted Cubs at the Lionworts School of Magick, just in time for Orientation on the Night of the Serpent Moon.
+
+    You acquitted yourself well by solving innumerable puzzles and braving innumerable dangers to make it to school on time.
+
+    Unfortunately, your welcome festivities have been interrupted by dangers most foul, and you will need to continue to rely on your wits and courage if you hope to survive.
+
+    Please return soon for the next adventure as you explore the wonders and mysteries of the Lionworts School of Magick: The Empty Academy.
+
+    <a href="https://twitter.com/intent/tweet?text=I%20survived%20the%20horrors%20of%20Lionworts%20forest%20and%20completed%20the%20Lion%20DAO's%20Halloween%20game%2C%20The%20Mysteries%20of%20Lionworts%F0%9F%A6%81%F0%9F%8E%83%0A%0AJoin%20the%20game%20and%20try%20to%20survive%20in%20the%20%40TheLionDAO%20TG%20channel%0A%22Flour%20from%20grain%2C%20blood%20from%20bone%0AAll%20will%20fall%20beneath%20the%20stone%22">Send an owl messenger forth and tell Liondon and the world of your adventures, young Cub</a>
